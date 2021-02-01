@@ -1,0 +1,47 @@
+@import "_atomic";
+
+body {
+  font-family: "Roboto";
+  @extend %normal-font;
+  line-height: 1.5;
+  color: $white;
+  background-color: $bg-color;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  @extend %flex;
+
+}
+
+.btn {
+  padding: 20px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: $white;
+  @extend %j-center;
+}
+
+.logo {
+  @extend %flex-row;
+  @extend %a-center;
+  @extend %small-font;
+
+  img {
+    height: 2em;
+    padding-right: 10px;
+  }
+
+  @media screen and (max-width: 600px){
+    img {
+      padding-right: 15px;
+    }
+  }
+}
+
+@include desktop-fonts;
+
+@media screen and (max-width: 600px) {
+  @include mobile-fonts;
+}

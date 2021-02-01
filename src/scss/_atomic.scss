@@ -1,0 +1,74 @@
+
+%flex {
+  display: flex;
+}
+
+%j-between {
+  justify-content: space-between;
+  @extend %flex;
+}
+
+%j-around {
+  justify-content: space-around;
+  @extend %flex;
+}
+
+%j-start {
+  justify-content: flex-start;
+  @extend %flex;
+}
+
+%a-center {
+  align-items: center;
+  @extend %flex;
+}
+
+%j-center {
+  justify-content: center;
+  @extend %flex;
+}
+
+%flex-row {
+  flex-direction: row;
+  @extend %flex;
+}
+
+%flex-column {
+  flex-direction: column;
+  @extend %flex;
+}
+
+header {
+  width: 100%;
+  @extend %j-center;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+	padding: 0;
+  @extend %a-center;
+  @extend %flex-column;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  padding-top: 0;
+  margin-top: 0;
+  flex: 1 0 auto;
+  @extend %flex-column;
+}
+
+section {
+  @extend %j-center;
+}
+
+footer {
+  width: 100%;
+  flex: 0 0 auto;
+  @extend %j-center;
+}

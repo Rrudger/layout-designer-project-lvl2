@@ -1,0 +1,59 @@
+$black: #08020D;
+$dark-grey: #cacaca;
+$bg-color: #08020d;
+$dark: #3C3B3D;
+$green: #34C176;
+$orange: #F89202;
+$puple: #5328A1;
+$red: #95390C;
+$white: #ffffff;
+
+@mixin desktop-fonts {
+  h1 {
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 57px;
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  %normal-font {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  %small-font {
+    font-size: 12px;
+  }
+
+
+}
+
+@mixin mobile-fonts {
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  %normal-font {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  %small-font {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
