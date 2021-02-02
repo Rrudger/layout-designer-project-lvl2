@@ -1,4 +1,4 @@
-header .wrap, header input, .page-news .news-wrap, .page-description .order-form, .container, main, body, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo, .btn, footer, section, header {
+header .wrap, header input, .page-app, .page-news .news-wrap, .page-description .order-form, .container, main, body, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo, .btn, footer, section, header {
   display: flex;
 }
 
@@ -6,23 +6,27 @@ header .wrap, header input, .page-news .news-wrap, .page-description .order-form
   justify-content: space-between;
 }
 
-.page-news .news-item {
+.page-app .container, .page-news .news-item {
   justify-content: flex-start;
 }
 
-.page-description .order-form, header .wrap, .logo, .container, body {
+.page-app, .page-description .order-form, header .wrap, .logo, .container, body {
   align-items: center;
+}
+
+.page-app .container {
+  align-items: flex-start;
 }
 
 .page-pricing .pricing-value, .btn, footer, section, header {
   justify-content: center;
 }
 
-.page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+.page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
-.page-news .news-wrap, .page-description .order-form, .container, main, body {
+.page-app, .page-news .news-wrap, .page-description .order-form, .container, main, body {
   flex-direction: column;
 }
 
@@ -52,7 +56,7 @@ footer {
   flex: 0 0 auto;
 }
 
-header .wrap, header input, .page-pricing .items, .page-description .inputs, header .container, .page-news .news-item, .page-description .order-form, .logo, .container, .page-pricing .pricing-value, .btn, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer {
+header .wrap, header input, .page-pricing .items, .page-description .inputs, header .container, .page-app .container, .page-news .news-item, .page-app, .page-description .order-form, .logo, .container, .page-pricing .pricing-value, .btn, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer {
   display: flex;
 }
 
@@ -60,23 +64,27 @@ header .wrap, header input, .page-pricing .items, .page-description .inputs, hea
   justify-content: space-between;
 }
 
-.page-news .news-item {
+.page-app .container, .page-news .news-item {
   justify-content: flex-start;
 }
 
-.page-description .order-form, header .wrap, .logo, .container, body {
+.page-app, .page-description .order-form, header .wrap, .logo, .container, body {
   align-items: center;
+}
+
+.page-app .container {
+  align-items: flex-start;
 }
 
 .page-pricing .pricing-value, .btn, header, section, footer {
   justify-content: center;
 }
 
-.page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+.page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
-.page-news .news-wrap, .page-description .order-form, .container, body, main {
+.page-app, .page-news .news-wrap, .page-description .order-form, .container, body, main {
   flex-direction: column;
 }
 
@@ -168,7 +176,7 @@ body {
   line-height: 27px;
 }
 
-.page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
+.page-app .btn, .page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
   font-size: 12.8px;
   line-height: 19.2px;
 }
@@ -199,12 +207,12 @@ header .container {
     line-height: 24px;
   }
 
-  .page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
+  .page-app .btn, .page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
     font-size: 12.8px;
     line-height: 19.2px;
   }
 }
-header .wrap, header input, .page-pricing .items, .page-description .inputs, header .container, .page-news .news-item, .page-description .order-form, .page-pricing .pricing-value, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer, .container, .btn, .logo {
+header .wrap, header input, .page-pricing .items, .page-description .inputs, header .container, .page-app .container, .page-news .news-item, .page-app, .page-description .order-form, .page-pricing .pricing-value, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer, .container, .btn, .logo {
   display: flex;
 }
 
@@ -212,23 +220,27 @@ header .wrap, header input, .page-pricing .items, .page-description .inputs, hea
   justify-content: space-between;
 }
 
-.page-news .news-item {
+.page-app .container, .page-news .news-item {
   justify-content: flex-start;
 }
 
-.page-description .order-form, header .wrap, body, .container, .logo {
+.page-app, .page-description .order-form, header .wrap, body, .container, .logo {
   align-items: center;
+}
+
+.page-app .container {
+  align-items: flex-start;
 }
 
 .page-pricing .pricing-value, header, section, footer, .btn {
   justify-content: center;
 }
 
-.page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+.page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
-.page-news .news-wrap, .page-description .order-form, body, main, .container {
+.page-app, .page-news .news-wrap, .page-description .order-form, body, main, .container {
   flex-direction: column;
 }
 
@@ -458,9 +470,6 @@ header nav a {
   }
 }
 
-.page-news {
-  border-top: 1px solid red;
-}
 .page-news .news-item {
   width: 100%;
   margin-bottom: 65px;
@@ -529,6 +538,52 @@ header nav a {
   }
   .page-news h3 {
     font-size: initial;
+  }
+}
+
+.page-app {
+  padding: 0 20px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.page-app .container {
+  margin-top: 35px;
+}
+.page-app .description {
+  text-align: left;
+  width: 50%;
+}
+.page-app .btn {
+  padding: 15px 35px;
+  border-color: #95390C;
+  border-radius: 2rem;
+  background-color: #95390C;
+  color: #ffffff;
+  width: 10%;
+}
+.page-app img {
+  margin-left: 150px;
+}
+.page-app h2 {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  .page-app .container {
+    padding: 0 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .page-app .description {
+    margin-top: -30px;
+    width: 102%;
+  }
+  .page-app .btn {
+    padding: 15px 45px;
+  }
+  .page-app img {
+    width: 100%;
+    margin: 0;
   }
 }
 
