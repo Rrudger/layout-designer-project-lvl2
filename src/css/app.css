@@ -1,24 +1,24 @@
-header .wrap, header input, .container, .page-description .order-form, .page-description .container, main, body, .page-description .inputs, header .horizontal-menu, .logo, .btn, footer, section, header, header .container {
+header .wrap, header input, .container, .page-pricing .container, .page-description .order-form, .page-description .container, main, body, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, .logo, .btn, footer, section, header, header .container {
   display: flex;
 }
 
-.page-description .inputs, header .container {
+.page-pricing .items, .page-description .inputs, header .container {
   justify-content: space-between;
 }
 
-.page-description .order-form, .page-description .container, header .wrap, .logo, body {
+.page-pricing .container, .page-description .order-form, .page-description .container, header .wrap, .logo, body {
   align-items: center;
 }
 
-.btn, footer, section, header {
+.page-pricing .pricing-value, .btn, footer, section, header {
   justify-content: center;
 }
 
-.page-description .inputs, header .horizontal-menu, .logo {
+.page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, .logo {
   flex-direction: row;
 }
 
-.page-description .order-form, .page-description .container, main, body {
+.page-pricing .container, .page-description .order-form, .page-description .container, main, body {
   flex-direction: column;
 }
 
@@ -48,27 +48,27 @@ footer {
   flex: 0 0 auto;
 }
 
-header .wrap, header input, .container, .page-description .inputs, header .container, .page-description .order-form, .page-description .container, .logo, .btn, header .horizontal-menu, header, body, main, section, footer {
+header .wrap, header input, .container, .page-pricing .items, .page-description .inputs, header .container, .page-pricing .container, .page-description .order-form, .page-description .container, .logo, .page-pricing .pricing-value, .btn, header .horizontal-menu, header, body, main, section, footer {
   display: flex;
 }
 
-.page-description .inputs, header .container {
+.page-pricing .items, .page-description .inputs, header .container {
   justify-content: space-between;
 }
 
-.page-description .order-form, .page-description .container, header .wrap, .logo, body {
+.page-pricing .container, .page-description .order-form, .page-description .container, header .wrap, .logo, body {
   align-items: center;
 }
 
-.btn, header, section, footer {
+.page-pricing .pricing-value, .btn, header, section, footer {
   justify-content: center;
 }
 
-.page-description .inputs, header .horizontal-menu, .logo {
+.page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, .logo {
   flex-direction: row;
 }
 
-.page-description .order-form, .page-description .container, body, main {
+.page-pricing .container, .page-description .order-form, .page-description .container, body, main {
   flex-direction: column;
 }
 
@@ -108,13 +108,21 @@ body {
 .container {
   width: 100%;
   max-width: 1200px;
+  text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 .btn {
   padding: 20px 30px;
   border-radius: 5px;
+  border: 2px solid #ffffff;
   text-decoration: none;
   color: #ffffff;
+  font-size: 16px;
 }
 
 .logo img {
@@ -137,6 +145,11 @@ h2 {
   line-height: 57px;
 }
 
+h3 {
+  font-size: 24px;
+  line-height: 45px;
+}
+
 p {
   font-size: 16px;
   line-height: 24px;
@@ -147,8 +160,14 @@ body {
   line-height: 27px;
 }
 
-header .container, .logo {
+.page-pricing .pricing-footer, .logo {
+  font-size: 12.8px;
+  line-height: 19.2px;
+}
+
+header .container {
   font-size: 12px;
+  line-height: 19px;
 }
 
 @media screen and (max-width: 600px) {
@@ -162,37 +181,42 @@ header .container, .logo {
     line-height: 27px;
   }
 
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   body {
     font-size: 18px;
     line-height: 24px;
   }
 
-  header .container, .logo {
-    font-size: 12px;
-    line-height: 17px;
+  .page-pricing .pricing-footer, .logo {
+    font-size: 12.8px;
+    line-height: 19.2px;
   }
 }
-header .wrap, header input, .page-description .inputs, header .container, .page-description .order-form, .page-description .container, header .horizontal-menu, header, body, main, section, footer, .container, .btn, .logo {
+header .wrap, header input, .page-pricing .items, .page-description .inputs, header .container, .page-pricing .container, .page-description .order-form, .page-description .container, .page-pricing .pricing-value, header .horizontal-menu, header, body, main, section, footer, .container, .btn, .logo {
   display: flex;
 }
 
-.page-description .inputs, header .container {
+.page-pricing .items, .page-description .inputs, header .container {
   justify-content: space-between;
 }
 
-.page-description .order-form, .page-description .container, header .wrap, body, .logo {
+.page-pricing .container, .page-description .order-form, .page-description .container, header .wrap, body, .logo {
   align-items: center;
 }
 
-header, section, footer, .btn {
+.page-pricing .pricing-value, header, section, footer, .btn {
   justify-content: center;
 }
 
-.page-description .inputs, header .horizontal-menu, .logo {
+.page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, .logo {
   flex-direction: row;
 }
 
-.page-description .order-form, .page-description .container, body, main {
+.page-pricing .container, .page-description .order-form, .page-description .container, body, main {
   flex-direction: column;
 }
 
@@ -266,8 +290,8 @@ header nav a {
     padding-left: 0;
   }
   header .horizontal-menu {
+    text-align: left;
     flex-direction: column;
-    align-self: flex-start;
     margin-left: 0;
     padding-left: 0;
   }
@@ -325,11 +349,9 @@ header nav a {
   margin-top: 25px;
 }
 @media screen and (max-width: 600px) {
-  .page-description .container {
-    padding: 0 20px;
-  }
   .page-description .inputs {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: stretch;
   }
   .page-description .input {
     max-width: inherit;
@@ -340,6 +362,88 @@ header nav a {
   }
   .page-description p {
     margin-top: 20px;
+  }
+}
+
+.page-pricing {
+  top: 0;
+}
+.page-pricing .items {
+  width: 100%;
+  margin-bottom: 30px;
+  flex: 1;
+}
+.page-pricing .pricing-item {
+  flex: 1;
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+}
+.page-pricing .pricing-item + .pricing-item {
+  margin-left: 45px;
+}
+.page-pricing .bg-free {
+  background-image: url("../images/subscribe_1.png");
+}
+.page-pricing .bg-standart {
+  background-image: url("../images/subscribe_2.png");
+}
+.page-pricing .bg-premium {
+  background-image: url("../images/subscribe_3.png");
+}
+.page-pricing .pricing-value {
+  line-height: 1rem;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+.page-pricing .pricing-value .price {
+  font-size: 64px;
+  line-height: 64px;
+}
+.page-pricing .pricing-value .value {
+  font-size: 32px;
+  line-height: 48px;
+  padding-left: 12px;
+}
+.page-pricing .pricing-footer {
+  padding: 0;
+  left: 0;
+  right: 0;
+  margin-top: 60px;
+  margin-bottom: 55px;
+}
+.page-pricing h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.page-pricing h3 {
+  padding-bottom: 200px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 600px) {
+  .page-pricing .items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 40px;
+  }
+  .page-pricing .pricing-item {
+    height: 32%;
+  }
+  .page-pricing .pricing-footer {
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
+  .page-pricing .pricing-item + .pricing-item {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .page-pricing h3 {
+    margin-top: 15px;
   }
 }
 

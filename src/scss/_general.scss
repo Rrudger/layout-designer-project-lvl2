@@ -11,15 +11,24 @@ body {
 .container {
   width: 100%;
   max-width: 1200px;
+  text-align: center;
   @extend %flex;
 
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 .btn {
   padding: 20px 30px;
   border-radius: 5px;
+  border: 2px solid $white;
   text-decoration: none;
   color: $white;
+  font-size: 16px;
   @extend %j-center;
 }
 
