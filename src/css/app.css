@@ -1,4 +1,4 @@
-header .wrap, header input, .container, .page-pricing .container, .page-description .order-form, .page-description .container, main, body, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, .logo, .btn, footer, section, header, header .container {
+header .wrap, header input, .page-news .news-wrap, .page-description .order-form, .container, main, body, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo, .btn, footer, section, header {
   display: flex;
 }
 
@@ -6,7 +6,11 @@ header .wrap, header input, .container, .page-pricing .container, .page-descript
   justify-content: space-between;
 }
 
-.page-pricing .container, .page-description .order-form, .page-description .container, header .wrap, .logo, body {
+.page-news .news-item {
+  justify-content: flex-start;
+}
+
+.page-description .order-form, header .wrap, .logo, .container, body {
   align-items: center;
 }
 
@@ -14,11 +18,11 @@ header .wrap, header input, .container, .page-pricing .container, .page-descript
   justify-content: center;
 }
 
-.page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, .logo {
+.page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
-.page-pricing .container, .page-description .order-form, .page-description .container, main, body {
+.page-news .news-wrap, .page-description .order-form, .container, main, body {
   flex-direction: column;
 }
 
@@ -48,7 +52,7 @@ footer {
   flex: 0 0 auto;
 }
 
-header .wrap, header input, .container, .page-pricing .items, .page-description .inputs, header .container, .page-pricing .container, .page-description .order-form, .page-description .container, .logo, .page-pricing .pricing-value, .btn, header .horizontal-menu, header, body, main, section, footer {
+header .wrap, header input, .page-pricing .items, .page-description .inputs, header .container, .page-news .news-item, .page-description .order-form, .logo, .container, .page-pricing .pricing-value, .btn, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer {
   display: flex;
 }
 
@@ -56,7 +60,11 @@ header .wrap, header input, .container, .page-pricing .items, .page-description 
   justify-content: space-between;
 }
 
-.page-pricing .container, .page-description .order-form, .page-description .container, header .wrap, .logo, body {
+.page-news .news-item {
+  justify-content: flex-start;
+}
+
+.page-description .order-form, header .wrap, .logo, .container, body {
   align-items: center;
 }
 
@@ -64,11 +72,11 @@ header .wrap, header input, .container, .page-pricing .items, .page-description 
   justify-content: center;
 }
 
-.page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, .logo {
+.page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
-.page-pricing .container, .page-description .order-form, .page-description .container, body, main {
+.page-news .news-wrap, .page-description .order-form, .container, body, main {
   flex-direction: column;
 }
 
@@ -160,7 +168,7 @@ body {
   line-height: 27px;
 }
 
-.page-pricing .pricing-footer, .logo {
+.page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
   font-size: 12.8px;
   line-height: 19.2px;
 }
@@ -191,12 +199,12 @@ header .container {
     line-height: 24px;
   }
 
-  .page-pricing .pricing-footer, .logo {
+  .page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
     font-size: 12.8px;
     line-height: 19.2px;
   }
 }
-header .wrap, header input, .page-pricing .items, .page-description .inputs, header .container, .page-pricing .container, .page-description .order-form, .page-description .container, .page-pricing .pricing-value, header .horizontal-menu, header, body, main, section, footer, .container, .btn, .logo {
+header .wrap, header input, .page-pricing .items, .page-description .inputs, header .container, .page-news .news-item, .page-description .order-form, .page-pricing .pricing-value, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer, .container, .btn, .logo {
   display: flex;
 }
 
@@ -204,7 +212,11 @@ header .wrap, header input, .page-pricing .items, .page-description .inputs, hea
   justify-content: space-between;
 }
 
-.page-pricing .container, .page-description .order-form, .page-description .container, header .wrap, body, .logo {
+.page-news .news-item {
+  justify-content: flex-start;
+}
+
+.page-description .order-form, header .wrap, body, .container, .logo {
   align-items: center;
 }
 
@@ -212,11 +224,11 @@ header .wrap, header input, .page-pricing .items, .page-description .inputs, hea
   justify-content: center;
 }
 
-.page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, .logo {
+.page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
-.page-pricing .container, .page-description .order-form, .page-description .container, body, main {
+.page-news .news-wrap, .page-description .order-form, body, main, .container {
   flex-direction: column;
 }
 
@@ -311,7 +323,6 @@ header nav a {
 }
 .page-description .container {
   margin-top: 0;
-  text-align: center;
 }
 .page-description .order-form {
   max-width: 570px;
@@ -444,6 +455,80 @@ header nav a {
   }
   .page-pricing h3 {
     margin-top: 15px;
+  }
+}
+
+.page-news {
+  border-top: 1px solid red;
+}
+.page-news .news-item {
+  width: 100%;
+  margin-bottom: 65px;
+}
+.page-news .news-wrap {
+  margin-left: 50px;
+  text-align: left;
+}
+.page-news .autor {
+  color: #F89202;
+}
+.page-news .news-reverse {
+  flex-direction: row-reverse;
+}
+.page-news .news-reverse .news-wrap {
+  margin-left: 0;
+  margin-right: 30px;
+}
+.page-news .news-reverse .news-footer {
+  margin-top: -10px;
+}
+.page-news .news-author p {
+  padding-left: 10px;
+}
+.page-news .news-author img {
+  height: 1.5em;
+}
+.page-news .btn {
+  padding: 15px 25px;
+  margin-top: 35px;
+  width: 15%;
+}
+.page-news h2 {
+  margin-top: 100px;
+  margin-bottom: 45px;
+}
+.page-news h3 {
+  font-size: 30px;
+  margin-top: 0;
+}
+@media screen and (max-width: 600px) {
+  .page-news .container {
+    flex-direction: column;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .page-news .news-item {
+    flex-direction: column;
+  }
+  .page-news .news-item img {
+    width: 100%;
+  }
+  .page-news .news-wrap {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .page-news .logo img {
+    width: 1.5em;
+    padding-right: 10px;
+  }
+  .page-news .btn {
+    width: 20%;
+  }
+  .page-news .news-reverse .news-wrap {
+    margin-right: 0;
+  }
+  .page-news h3 {
+    font-size: initial;
   }
 }
 

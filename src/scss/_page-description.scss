@@ -6,9 +6,6 @@
 
   .container {
     margin-top: 0;
-    text-align: center;
-    @extend %flex-column;
-    @extend %a-center;
   }
 
   .order-form {

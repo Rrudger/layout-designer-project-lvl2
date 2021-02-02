@@ -23,6 +23,11 @@
   @extend %flex;
 }
 
+%a-start {
+  align-items: flex-start;
+  @extend %flex;
+}
+
 %j-center {
   justify-content: center;
   @extend %flex;

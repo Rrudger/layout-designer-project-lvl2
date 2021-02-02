@@ -12,8 +12,8 @@ body {
   width: 100%;
   max-width: 1200px;
   text-align: center;
-  @extend %flex;
-
+  @extend %flex-column;
+  @extend %a-center;
 }
 
 @media screen and (max-width: 600px) {

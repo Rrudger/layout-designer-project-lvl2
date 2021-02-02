@@ -1,11 +1,6 @@
 .page-pricing {
   top:0;
-
-  .container {
-    @extend %flex-column;
-    @extend %a-center;
-  }
-
+  
   .items {
     width: 100%;
     margin-bottom: 30px;
