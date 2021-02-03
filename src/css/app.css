@@ -1,12 +1,12 @@
-header .wrap, header input, .page-app, .page-news .news-wrap, .page-description .order-form, .container, main, body, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo, .btn, footer, section, header {
+header .wrap, header input, .page-app, .page-news .news-wrap, .page-description .order-form, .container, main, body, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo, .btn, footer, section, header {
   display: flex;
 }
 
-.page-pricing .items, .page-description .inputs, header .container {
+footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
   justify-content: space-between;
 }
 
-.page-app .container, .page-news .news-item {
+footer .lower-footer, .page-app .container, .page-news .news-item {
   justify-content: flex-start;
 }
 
@@ -22,7 +22,7 @@ header .wrap, header input, .page-app, .page-news .news-wrap, .page-description 
   justify-content: center;
 }
 
-.page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
@@ -56,15 +56,15 @@ footer {
   flex: 0 0 auto;
 }
 
-header .wrap, header input, .page-pricing .items, .page-description .inputs, header .container, .page-app .container, .page-news .news-item, .page-app, .page-description .order-form, .logo, .container, .page-pricing .pricing-value, .btn, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer {
+header .wrap, header input, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container, footer .lower-footer, .page-app .container, .page-news .news-item, .page-app, .page-description .order-form, .logo, .container, .page-pricing .pricing-value, .btn, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer {
   display: flex;
 }
 
-.page-pricing .items, .page-description .inputs, header .container {
+footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
   justify-content: space-between;
 }
 
-.page-app .container, .page-news .news-item {
+footer .lower-footer, .page-app .container, .page-news .news-item {
   justify-content: flex-start;
 }
 
@@ -80,7 +80,7 @@ header .wrap, header input, .page-pricing .items, .page-description .inputs, hea
   justify-content: center;
 }
 
-.page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
@@ -212,15 +212,15 @@ header .container {
     line-height: 19.2px;
   }
 }
-header .wrap, header input, .page-pricing .items, .page-description .inputs, header .container, .page-app .container, .page-news .news-item, .page-app, .page-description .order-form, .page-pricing .pricing-value, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer, .container, .btn, .logo {
+header .wrap, header input, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container, footer .lower-footer, .page-app .container, .page-news .news-item, .page-app, .page-description .order-form, .page-pricing .pricing-value, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer, .container, .btn, .logo {
   display: flex;
 }
 
-.page-pricing .items, .page-description .inputs, header .container {
+footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
   justify-content: space-between;
 }
 
-.page-app .container, .page-news .news-item {
+footer .lower-footer, .page-app .container, .page-news .news-item {
   justify-content: flex-start;
 }
 
@@ -236,7 +236,7 @@ header .wrap, header input, .page-pricing .items, .page-description .inputs, hea
   justify-content: center;
 }
 
-.page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
@@ -584,6 +584,73 @@ header nav a {
   .page-app img {
     width: 100%;
     margin: 0;
+  }
+}
+
+footer {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+footer .upper-footer {
+  line-height: 3rem;
+  width: 100%;
+  margin-bottom: 55px;
+}
+footer .upper-footer ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+  padding-top: 45px;
+  margin-top: 0;
+  margin-right: 50px;
+  flex: 1;
+}
+footer .upper-footer ul p {
+  font-size: 18px;
+}
+footer .upper-footer .subscribe {
+  margin-right: 10px;
+}
+footer .upper-footer .subscribe p {
+  margin-bottom: 10px;
+}
+footer .upper-footer .subscribe img {
+  margin-right: 20px;
+}
+footer .upper-footer li {
+  font-size: 16px;
+  line-height: 24px;
+}
+footer .lower-footer {
+  margin-top: 25px;
+  line-height: 2rem;
+  width: 100%;
+}
+footer .lower-footer p {
+  margin-right: 15px;
+}
+footer .border {
+  width: 100vw;
+  border-top: 1px solid #ffffff;
+}
+@media screen and (max-width: 600px) {
+  footer .upper-footer {
+    flex-direction: column;
+    padding-top: 45px;
+    margin-bottom: 45px;
+  }
+  footer .upper-footer ul {
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-top: 0;
+    margin-left: 20px;
+  }
+  footer .lower-footer {
+    padding-left: 35px;
+    flex-direction: column;
+    text-align: left;
+  }
+  footer .lower-footer p {
+    margin-bottom: 0;
   }
 }
 
