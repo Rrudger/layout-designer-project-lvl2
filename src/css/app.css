@@ -1,16 +1,16 @@
-header .wrap, header input, .page-app, .page-news .news-wrap, .page-description .order-form, .container, main, body, .artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo, .btn, footer, section, header, .artist-description .container, .artist-description .buttons .btn {
+header .wrap, header input, .page-popular-track, .page-app, .page-news .news-wrap, .page-description .order-form, .container, main, body, .page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track .container, .artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo, .btn, footer, section, header, .artist-description .container, .artist-description .buttons .btn {
   display: flex;
 }
 
-footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
+.page-popular-track .track-info, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
   justify-content: space-between;
 }
 
-.artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item {
+.page-popular-track .popular-track, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item {
   justify-content: flex-start;
 }
 
-.page-app, .page-description .order-form, header .wrap, .logo, .container, body {
+.page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track, .page-app, .page-description .order-form, header .wrap, .logo, .container, body {
   align-items: center;
 }
 
@@ -22,11 +22,11 @@ footer .upper-footer, .page-pricing .items, .page-description .inputs, header .c
   justify-content: center;
 }
 
-.artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+.page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track .container, .artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
-.page-app, .page-news .news-wrap, .page-description .order-form, .container, main, body {
+.page-popular-track, .page-app, .page-news .news-wrap, .page-description .order-form, .container, main, body {
   flex-direction: column;
 }
 
@@ -56,19 +56,19 @@ footer {
   flex: 0 0 auto;
 }
 
-header .wrap, header input, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item, .page-app, .page-description .order-form, .logo, .container, .artist-description .container, .page-pricing .pricing-value, .btn, .artist-description .buttons, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer {
+header .wrap, header input, .page-popular-track .track-info, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container, .page-popular-track .popular-track, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item, .page-popular-track, .page-app, .page-description .order-form, .logo, .container, .artist-description .container, .page-pricing .pricing-value, .btn, .page-popular-track .container, .artist-description .buttons, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer {
   display: flex;
 }
 
-footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
+.page-popular-track .track-info, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
   justify-content: space-between;
 }
 
-.artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item {
+.page-popular-track .popular-track, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item {
   justify-content: flex-start;
 }
 
-.page-app, .page-description .order-form, header .wrap, .logo, .container, body {
+.page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track, .page-app, .page-description .order-form, header .wrap, .logo, .container, body {
   align-items: center;
 }
 
@@ -80,11 +80,11 @@ footer .upper-footer, .page-pricing .items, .page-description .inputs, header .c
   justify-content: center;
 }
 
-.artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+.page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track .container, .artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
-.page-app, .page-news .news-wrap, .page-description .order-form, .container, body, main {
+.page-popular-track, .page-app, .page-news .news-wrap, .page-description .order-form, .container, body, main {
   flex-direction: column;
 }
 
@@ -176,7 +176,7 @@ body {
   line-height: 27px;
 }
 
-.artist-description .buttons .btn, .page-app .btn, .page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
+.page-popular-track .track-info p, .artist-description .buttons .btn, .page-app .btn, .page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
   font-size: 12.8px;
   line-height: 19.2px;
 }
@@ -207,24 +207,24 @@ header .container {
     line-height: 24px;
   }
 
-  .artist-description .buttons .btn, .page-app .btn, .page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
+  .page-popular-track .track-info p, .artist-description .buttons .btn, .page-app .btn, .page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
     font-size: 12.8px;
     line-height: 19.2px;
   }
 }
-header .wrap, header input, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item, .page-app, .page-description .order-form, .artist-description .container, .page-pricing .pricing-value, .artist-description .buttons, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer, .container, .btn, .logo {
+header .wrap, header input, .page-popular-track .track-info, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container, .page-popular-track .popular-track, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item, .page-popular-track, .page-app, .page-description .order-form, .artist-description .container, .page-pricing .pricing-value, .page-popular-track .container, .artist-description .buttons, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer, .container, .btn, .logo {
   display: flex;
 }
 
-footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
+.page-popular-track .track-info, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
   justify-content: space-between;
 }
 
-.artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item {
+.page-popular-track .popular-track, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item {
   justify-content: flex-start;
 }
 
-.page-app, .page-description .order-form, header .wrap, body, .container, .logo {
+.page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track, .page-app, .page-description .order-form, header .wrap, body, .container, .logo {
   align-items: center;
 }
 
@@ -236,11 +236,11 @@ footer .upper-footer, .page-pricing .items, .page-description .inputs, header .c
   justify-content: center;
 }
 
-.artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+.page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track .container, .artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
   flex-direction: row;
 }
 
-.page-app, .page-news .news-wrap, .page-description .order-form, body, main, .container {
+.page-popular-track, .page-app, .page-news .news-wrap, .page-description .order-form, body, main, .container {
   flex-direction: column;
 }
 
@@ -695,6 +695,53 @@ footer .border {
   .artist-description .buttons .btn {
     width: 35%;
     margin-bottom: 25px;
+  }
+}
+
+.page-popular-track {
+  text-align: left;
+}
+.page-popular-track .container {
+  flex-wrap: wrap;
+}
+.page-popular-track .popular-track {
+  min-width: 40%;
+  flex: 1;
+  margin-right: 50px;
+  margin-top: 25px;
+}
+.page-popular-track .popular-track img {
+  height: 55px;
+  width: 55px;
+  margin-right: 15px;
+}
+.page-popular-track .track-info {
+  flex-grow: 1;
+}
+.page-popular-track .track-info p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.page-popular-track .track {
+  text-align: left;
+}
+.page-popular-track h2 {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: left;
+}
+@media screen and (max-width: 600px) {
+  .page-popular-track {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-popular-track .container {
+    flex-direction: column;
+  }
+  .page-popular-track .popular-track {
+    width: 100%;
+    margin-right: 0;
   }
 }
 

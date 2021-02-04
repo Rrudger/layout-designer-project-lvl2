@@ -1,0 +1,68 @@
+.page-popular-track {
+
+  text-align: left;
+  @extend %flex-column;
+  @extend %a-center;
+
+  .container {
+    @extend %flex-row;
+    flex-wrap: wrap;
+  }
+
+  .popular-track {
+    min-width: 40%;
+    flex: 1;
+    margin-right: 50px;
+    margin-top: 25px;
+    @extend %flex-row;
+    @extend %j-start;
+    @extend %a-center;
+
+    img {
+      height: 55px;
+      width: 55px;
+      margin-right: 15px;
+    }
+  }
+
+  .track-info {
+    flex-grow: 1;
+
+    @extend %flex-row;
+    @extend %j-between;
+    @extend %a-center;
+
+    p {
+      margin-bottom: 0;
+      margin-top: 0;
+      @extend %small-font;
+    }
+  }
+
+  .track {
+    text-align: left;
+  }
+
+  h2 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .container {
+      flex-direction: column;
+    }
+
+    .popular-track {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+}
