@@ -1,0 +1,57 @@
+.artist-description {
+  background-image: url("../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+
+  .container {
+  margin-top: 0;
+  @extend %a-start;
+  }
+
+  .buttons {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 100%;
+    @extend %flex-row;
+
+    .btn {
+      width: 11%;
+      margin-right: 25px;
+      @extend %j-start;
+      @extend %small-font;
+    }
+
+    .purple {
+      background-color: $purple;
+      border-color: $purple;
+    }
+
+    .red {
+      background-color: $red;
+      border-color: $red;
+    }
+
+    img {
+      height: 1.5em;
+      margin-right: 15px;
+    }
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .buttons {
+      flex-direction: column;
+      margin-bottom: 0;
+
+      .btn {
+        width: 35%;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+}
