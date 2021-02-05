@@ -4,7 +4,7 @@ header {
   .container {
     position: absolute;
     z-index: 9999;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 30px;
     margin-right: 30px;
     @extend %small-header;
@@ -14,14 +14,13 @@ header {
 
   input {
     background-color: $dark;
-    border-color: $dark;
     color: $dark-grey;
     border-radius: 15px;
     height: 1.6em;
     align-self: center;
-    border-style: solid;
-    padding-left: 10px;
-    width: 20%;
+    border: 1px solid $dark;
+    padding: 0 0 0 10px;
+    width: 21%;
     @extend %flex;
 
   }
@@ -29,6 +28,10 @@ header {
   .wrap {
     @extend %flex;
     @extend %a-center;
+
+    p {
+      @extend %small-header;
+    }
   }
 
   .horizontal-menu {
@@ -36,12 +39,17 @@ header {
     margin-left: 40px;
     @extend %flex-row;
 
+    li {
+      margin-right: 5px;
+    }
   }
 
   nav a {
     text-decoration: none;
     padding: 10px;
     color: $dark-grey;
+
+
   }
 
   @media screen and (max-width: 600px){
@@ -50,8 +58,8 @@ header {
       align-content: flex-start;
       flex-wrap: wrap;
       margin: 0;
-      padding-top: 25px;
-      padding-left: 50px;
+      padding-top: 20px;
+      padding-left: 20px;
       padding-right: 20px;
 
     }
@@ -67,7 +75,9 @@ header {
       text-align: left;
       flex-direction: column;
       margin-left: 0;
+      margin-bottom: 20px;
       padding-left: 0;
+      line-height: 15px;
     }
 
     nav a {
@@ -75,7 +85,11 @@ header {
     }
 
     input {
+      border: 2px solid $dark;
+      font-size: 13.3px;
+      line-height: 15.29px;
       width: 90%;
+      padding: 10px 0 10px 10px;
     }
   }
 

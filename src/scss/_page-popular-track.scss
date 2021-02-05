@@ -7,6 +7,7 @@
   .container {
     @extend %flex-row;
     flex-wrap: wrap;
+    
   }
 
   .popular-track {

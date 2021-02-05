@@ -20,7 +20,7 @@
     max-width: 270px;
     min-height: 50px;
     width: 43%;
-    padding-left: 20px;
+    padding: 0 0 0 20px;
     margin-bottom: 1.5rem;
     border: 2px solid $dark-grey;
     background: transparent;
@@ -29,14 +29,17 @@
 
 .inputs {
     width: 100%;
+    font-size: 14px;
+    line-height: 16.41px;
     @extend %flex-row;
     @extend %j-between;
   }
 
 .btn.green {
-    border: 2px solid $green;
+    border: 1px solid $green;
     background-color: $green;
-    font-size: 14px;
+    padding: 25px 30px;
+    font-size: 13.3px;
   }
 
 .wrap {
@@ -52,19 +55,19 @@
   }
 
   p {
-    margin-top: 25px;
+    margin-top: 30px;
   }
 
   @media screen and (max-width: 600px) {
 
     .inputs {
-      flex-direction: row;
-      align-items: stretch;
+      width: 100%;
+      display: block;
     }
 
     .input {
-      max-width: inherit;
-      width: 93%;
+    padding-right: 190px;
+    min-height: 45px;
     }
 
     h1 {
@@ -73,6 +76,7 @@
 
     p {
       margin-top: 20px;
+      margin-bottom: 15px;
     }
   }
 
