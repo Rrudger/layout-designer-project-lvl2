@@ -15,6 +15,7 @@
     border-radius: 1rem;
     background-position: center;
     background-size: cover;
+    padding-bottom: 10px;
   }
 
   .pricing-item +.pricing-item {
@@ -35,7 +36,8 @@
 
   .pricing-value {
     line-height: 1rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    margin-right: 10px;
     @extend %flex-row;
     align-items: flex-start;
     @extend %j-center;
@@ -54,8 +56,6 @@
 
   .pricing-footer {
     padding: 0;
-    left: 0;
-    right: 0;
     margin-top: 60px;
     margin-bottom: 55px;
     @extend %small-font;
@@ -63,6 +63,7 @@
 
   .section-footer {
     margin-bottom: 0;
+    margin-top: 10px;
   }
 
   h2 {
@@ -73,8 +74,8 @@
   }
 
   h3 {
-    padding-bottom: 200px;
-    margin-top: 20px;
+    padding-bottom: 195px;
+    margin-top: 15px;
     margin-bottom: 0;
   }
 
