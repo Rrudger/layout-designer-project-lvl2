@@ -1,5 +1,5 @@
 .page-news {
-  
+
 .news-item {
   width: 100%;
   margin-bottom: 65px;
@@ -8,7 +8,7 @@
 }
 
 .news-wrap {
-  margin-left: 50px;
+  margin-left: 55px;
   text-align: left;
   @extend %flex-column;
 }
@@ -17,8 +17,12 @@
   color: $orange;
 }
 
+.news-footer {
+}
+
 .news-reverse {
   flex-direction: row-reverse;
+  margin-bottom: 0;
 
   .news-wrap {
     margin-left: 0;
@@ -26,18 +30,19 @@
   }
 
   .news-footer {
-    margin-top: -10px;
+    margin-top: -5px;
   }
 }
 
 .news-author {
   p{
-    padding-left: 10px;
+    padding-right: 15px;
   @extend %small-font;
 }
 
 img {
-  height: 1.5em;
+  height: 19px;
+  width: 19px;
 }
 }
 
@@ -50,12 +55,14 @@ img {
 
 h2 {
   margin-top: 100px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 29px;
+  line-height: 40px;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 600px){

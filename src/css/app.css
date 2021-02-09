@@ -451,6 +451,9 @@ header nav a {
   margin-top: 60px;
   margin-bottom: 55px;
 }
+.page-pricing .section-footer {
+  margin-bottom: 0;
+}
 .page-pricing h2 {
   margin-top: 0;
   margin-bottom: 0;
@@ -490,7 +493,7 @@ header nav a {
   margin-bottom: 65px;
 }
 .page-news .news-wrap {
-  margin-left: 50px;
+  margin-left: 55px;
   text-align: left;
 }
 .page-news .autor {
@@ -498,19 +501,21 @@ header nav a {
 }
 .page-news .news-reverse {
   flex-direction: row-reverse;
+  margin-bottom: 0;
 }
 .page-news .news-reverse .news-wrap {
   margin-left: 0;
   margin-right: 30px;
 }
 .page-news .news-reverse .news-footer {
-  margin-top: -10px;
+  margin-top: -5px;
 }
 .page-news .news-author p {
-  padding-left: 10px;
+  padding-right: 15px;
 }
 .page-news .news-author img {
-  height: 1.5em;
+  height: 19px;
+  width: 19px;
 }
 .page-news .btn {
   padding: 15px 25px;
@@ -519,11 +524,13 @@ header nav a {
 }
 .page-news h2 {
   margin-top: 100px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 .page-news h3 {
-  font-size: 30px;
+  font-size: 29px;
+  line-height: 40px;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 600px) {
   .page-news .container {
