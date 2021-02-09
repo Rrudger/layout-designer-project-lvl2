@@ -406,6 +406,9 @@ header nav a {
 .page-pricing {
   top: 0;
 }
+.page-pricing .container {
+  margin-right: 200px;
+}
 .page-pricing .items {
   width: 100%;
   margin-bottom: 30px;
