@@ -2,6 +2,7 @@
   .container {
     @extend %flex-row;
     flex-wrap: wrap;
+    margin-bottom: 100px;
   }
 
   .similar-item {

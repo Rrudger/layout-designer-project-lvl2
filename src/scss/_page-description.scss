@@ -4,11 +4,7 @@
   background-size: cover;
   padding: 200px 0;
 
-  .container {
-    margin-top: 0;
-  }
-
-  .order-form {
+    .order-form {
     max-width: 570px;
     width: 100%;
     line-height: 5px;
@@ -63,6 +59,7 @@
     .inputs {
       width: 100%;
       display: block;
+      margin-bottom: 3px;
     }
 
     .input {

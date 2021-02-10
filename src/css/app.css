@@ -137,10 +137,11 @@ body {
 .btn {
   padding: 20px 30px;
   border-radius: 5px;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .logo img {
@@ -201,7 +202,7 @@ header .wrap p, header .container {
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
   }
 
@@ -344,9 +345,6 @@ header nav a {
   background-size: cover;
   padding: 200px 0;
 }
-.page-description .container {
-  margin-top: 0;
-}
 .page-description .order-form {
   max-width: 570px;
   width: 100%;
@@ -389,6 +387,7 @@ header nav a {
   .page-description .inputs {
     width: 100%;
     display: block;
+    margin-bottom: 3px;
   }
   .page-description .input {
     padding-right: 190px;
@@ -405,9 +404,6 @@ header nav a {
 
 .page-pricing {
   top: 0;
-}
-.page-pricing .container {
-  margin-right: 200px;
 }
 .page-pricing .items {
   width: 100%;
@@ -436,7 +432,7 @@ header nav a {
 }
 .page-pricing .pricing-value {
   line-height: 1rem;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   margin-right: 10px;
   align-items: flex-start;
 }
@@ -451,12 +447,12 @@ header nav a {
 }
 .page-pricing .pricing-footer {
   padding: 0;
-  margin-top: 60px;
+  margin-top: 65px;
   margin-bottom: 55px;
 }
 .page-pricing .section-footer {
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .page-pricing h2 {
   margin-top: 0;
@@ -465,7 +461,7 @@ header nav a {
   padding-bottom: 50px;
 }
 .page-pricing h3 {
-  padding-bottom: 195px;
+  padding-bottom: 200px;
   margin-top: 15px;
   margin-bottom: 0;
 }
@@ -477,15 +473,22 @@ header nav a {
     margin-bottom: 40px;
   }
   .page-pricing .pricing-item {
+    padding-bottom: 0;
     height: 32%;
+  }
+  .page-pricing .pricing-value {
+    margin-bottom: 40px;
   }
   .page-pricing .pricing-footer {
     margin-top: 65px;
-    margin-bottom: 65px;
+    margin-bottom: 55px;
   }
   .page-pricing .pricing-item + .pricing-item {
     margin-left: 0;
     margin-top: 50px;
+  }
+  .page-pricing .section-footer {
+    margin-top: 25px;
   }
   .page-pricing h3 {
     margin-top: 15px;
@@ -503,13 +506,16 @@ header nav a {
 .page-news .autor {
   color: #F89202;
 }
+.page-news .news-body p {
+  margin-bottom: 10px;
+}
 .page-news .news-reverse {
   flex-direction: row-reverse;
   margin-bottom: 0;
 }
 .page-news .news-reverse .news-wrap {
   margin-left: 0;
-  margin-right: 30px;
+  margin-right: 55px;
 }
 .page-news .news-reverse .news-footer {
   margin-top: -5px;
@@ -522,6 +528,7 @@ header nav a {
   width: 19px;
 }
 .page-news .btn {
+  border-width: 1px;
   padding: 15px 25px;
   margin-top: 35px;
   width: 15%;
@@ -534,7 +541,7 @@ header nav a {
   font-size: 29px;
   line-height: 40px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 @media screen and (max-width: 600px) {
   .page-news .container {
@@ -550,20 +557,30 @@ header nav a {
   }
   .page-news .news-wrap {
     margin-left: 0;
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .page-news .logo img {
     width: 1.5em;
-    padding-right: 10px;
+    padding-right: 15px;
   }
   .page-news .btn {
-    width: 20%;
+    width: 22%;
   }
   .page-news .news-reverse .news-wrap {
     margin-right: 0;
   }
+  .page-news .news-reverse h3 {
+    margin-bottom: 10px;
+  }
+  .page-news .news-body p {
+    margin-top: 0;
+  }
+  .page-news .news-footer {
+    margin-top: 5px;
+  }
   .page-news h3 {
-    font-size: initial;
+    font-size: 15px;
+    margin-bottom: 5px;
   }
 }
 
@@ -573,7 +590,7 @@ header nav a {
   margin-bottom: 100px;
 }
 .page-app .container {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 .page-app .description {
   text-align: left;
@@ -601,7 +618,7 @@ header nav a {
     align-items: center;
   }
   .page-app .description {
-    margin-top: -30px;
+    margin-top: -35px;
     width: 102%;
   }
   .page-app .btn {
@@ -820,6 +837,7 @@ footer .border {
 
 .page-similar .container {
   flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 .page-similar .similar-item {
   margin-right: 50px;

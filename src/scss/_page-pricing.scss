@@ -1,10 +1,6 @@
 .page-pricing {
   top:0;
 
-  .container {
-    margin-right: 200px;
-  }
-
   .items {
     width: 100%;
     margin-bottom: 30px;
@@ -40,7 +36,7 @@
 
   .pricing-value {
     line-height: 1rem;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     margin-right: 10px;
     @extend %flex-row;
     align-items: flex-start;
@@ -60,14 +56,14 @@
 
   .pricing-footer {
     padding: 0;
-    margin-top: 60px;
+    margin-top: 65px;
     margin-bottom: 55px;
     @extend %small-font;
   }
 
   .section-footer {
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   h2 {
@@ -78,7 +74,7 @@
   }
 
   h3 {
-    padding-bottom: 195px;
+    padding-bottom: 200px;
     margin-top: 15px;
     margin-bottom: 0;
   }
@@ -93,17 +89,26 @@
   }
 
   .pricing-item {
+    padding-bottom: 0;
     height: 32%;
+  }
+
+  .pricing-value {
+    margin-bottom: 40px;
   }
 
   .pricing-footer {
     margin-top: 65px;
-    margin-bottom: 65px;
+    margin-bottom: 55px;
   }
 
   .pricing-item +.pricing-item {
     margin-left: 0;
     margin-top: 50px;
+  }
+
+  .section-footer {
+    margin-top: 25px;
   }
 
   h3 {

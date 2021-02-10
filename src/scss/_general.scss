@@ -28,10 +28,11 @@ body {
 .btn {
   padding: 20px 30px;
   border-radius: 5px;
-  border: 2px solid $white;
+  border: 1px solid $white;
   text-decoration: none;
   color: $white;
   font-size: 16px;
+  cursor: pointer;
   @extend %j-center;
 }
 

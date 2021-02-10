@@ -6,7 +6,7 @@
   @extend %a-center;
 
   .container {
-    margin-top: 35px;
+    margin-top: 40px;
     @extend %flex-row;
     @extend %j-start;
     @extend %a-start;
@@ -44,7 +44,7 @@
       }
 
       .description {
-        margin-top: -30px;
+        margin-top: -35px;
         width: 102%;
       }
 
