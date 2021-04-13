@@ -3,55 +3,61 @@
   background-position: center;
   background-size: cover;
   padding: 200px 0;
+}
 
-  .container {
-  margin-top: 0;
+.a-left-container {
   @extend %a-start;
-  }
+}
 
-  .buttons {
-    margin-top: 30px;
-    margin-bottom: 25px;
-    width: 100%;
-    @extend %flex-row;
+.buttons {
+  margin-top: 35px;
+  margin-bottom: 25px;
+  width: 100%;
+  @extend %flex-row;
+}
 
-    .btn {
-      width: 11%;
-      margin-right: 25px;
-      @extend %j-start;
-      @extend %small-font;
-    }
+.descr-btn {
+  padding: 15px 30px;
+  @extend %j-start;
+  @extend %a-center;
+}
 
-    .purple {
-      background-color: $purple;
-      border-color: $purple;
-    }
+.btn-purple {
+  background-color: $purple;
+  border-color: $purple;
+}
 
-    .red {
-      background-color: $red;
-      border-color: $red;
-    }
+.btn-red {
+  background-color: $red;
+  border-color: $red;
+}
 
-    img {
-      height: 1.5em;
-      margin-right: 15px;
-    }
-  }
+.btn-img {
+  height: 1.5em;
+  margin-right: 15px;
+}
 
-  h1 {
-    margin-bottom: 0;
-  }
+.h1-artist {
+  margin-bottom: 0;
+  margin-top: 60px;
+}
 
   @media screen and (max-width: 600px) {
     .buttons {
       flex-direction: column;
-      margin-bottom: 0;
+      padding-bottom: 0;
+    }
 
-      .btn {
-        width: 35%;
-        margin-bottom: 25px;
-      }
+    .descr-btn {
+      width: 35%;
+      margin-bottom: 25px;
+    }
+
+    .a-left-container {
+      align-items: flex-start !important;
+    }
+
+    .h1-artist {
+      margin-top: 30px;
     }
   }
-
-}

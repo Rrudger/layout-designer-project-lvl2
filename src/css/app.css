@@ -1,37 +1,33 @@
-header .wrap, header input, .page-popular-track, .page-app, .page-news .news-wrap, .page-description .order-form, .container, main, body, .page-similar .container, .page-discography .container, .page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track .container, .artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo, .btn, footer, section, header, .artist-description .container, .artist-description .buttons .btn {
+.wrap, input, footer, .order-form, .c-flex-column, section, main, body, .track-info, .popular-track, .buttons, .lower-footer, .upper-footer, .pricing-value, .inputs, .horizontal-menu, header, .logo, .c-flex-row, .similar-info, .img-app, .a-left-container, .descr-btn {
   display: flex;
 }
 
-.page-popular-track .track-info, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
+.track-info, .upper-footer, .inputs, .c-flex-row {
   justify-content: space-between;
 }
 
-.page-discography .container, .page-popular-track .popular-track, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item {
+.popular-track, .descr-btn, .lower-footer {
   justify-content: flex-start;
 }
 
-.page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track, .page-app, .page-description .order-form, header .wrap, .logo, .container, body {
+.track-info, .popular-track, .descr-btn, .img-app, .order-form, .wrap, .logo, .c-flex-column, section, body {
   align-items: center;
 }
 
-.artist-description .container, .page-app .container {
+.a-left-container, .pricing-value {
   align-items: flex-start;
 }
 
-.page-pricing .pricing-value, .btn, footer, section, header {
+.similar-info, .img-app, .pricing-value, header, footer, section {
   justify-content: center;
 }
 
-.page-similar .container, .page-discography .container, .page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track .container, .artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+.track-info, .popular-track, .buttons, .lower-footer, .upper-footer, .pricing-value, .inputs, .horizontal-menu, header, .logo, .c-flex-row {
   flex-direction: row;
 }
 
-.page-popular-track, .page-app, .page-news .news-wrap, .page-description .order-form, .container, main, body {
+footer, .order-form, .c-flex-column, section, main, body {
   flex-direction: column;
-}
-
-header {
-  width: 100%;
 }
 
 html, body {
@@ -56,40 +52,36 @@ footer {
   flex: 0 0 auto;
 }
 
-header .wrap, header input, .page-popular-track .track-info, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container, .page-discography .container, .page-popular-track .popular-track, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item, .page-popular-track, .page-app, .page-description .order-form, .logo, .container, .artist-description .container, .page-pricing .pricing-value, .btn, .page-similar .container, .page-popular-track .container, .artist-description .buttons, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer {
+.wrap, input, .track-info, .upper-footer, .inputs, .c-flex-row, .popular-track, .descr-btn, .lower-footer, .img-app, .order-form, .logo, .c-flex-column, section, .a-left-container, .pricing-value, .similar-info, header, .buttons, .horizontal-menu, footer, body, main {
   display: flex;
 }
 
-.page-popular-track .track-info, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
+.track-info, .upper-footer, .inputs, .c-flex-row {
   justify-content: space-between;
 }
 
-.page-discography .container, .page-popular-track .popular-track, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item {
+.popular-track, .descr-btn, .lower-footer {
   justify-content: flex-start;
 }
 
-.page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track, .page-app, .page-description .order-form, header .wrap, .logo, .container, body {
+.track-info, .popular-track, .descr-btn, .img-app, .order-form, .wrap, .logo, .c-flex-column, section, body {
   align-items: center;
 }
 
-.artist-description .container, .page-app .container {
+.a-left-container, .pricing-value {
   align-items: flex-start;
 }
 
-.page-pricing .pricing-value, .btn, header, section, footer {
+.similar-info, .img-app, .pricing-value, header, section, footer {
   justify-content: center;
 }
 
-.page-similar .container, .page-discography .container, .page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track .container, .artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+.track-info, .popular-track, .buttons, .lower-footer, .upper-footer, .pricing-value, .inputs, .horizontal-menu, header, .logo, .c-flex-row {
   flex-direction: row;
 }
 
-.page-popular-track, .page-app, .page-news .news-wrap, .page-description .order-form, .container, body, main {
+footer, .order-form, .c-flex-column, section, body, main {
   flex-direction: column;
-}
-
-header {
-  width: 100%;
 }
 
 html, body {
@@ -121,27 +113,117 @@ body {
   background-color: #08020d;
 }
 
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+}
+
+.grid-4-columns {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
   text-align: center;
+  align-self: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 676px) {
   .container {
+    box-sizing: border-box;
     padding: 0 20px;
     left: 0;
     right: 0;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
   }
 }
+main {
+  position: relative;
+  top: -60px;
+}
+
+@media screen and (max-width: 676px) {
+  main {
+    top: -180px;
+  }
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .btn {
+  width: 140px;
   padding: 20px 30px;
   border-radius: 5px;
   border: 1px solid #ffffff;
   text-decoration: none;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 13px;
+  margin-right: 1.5rem;
   cursor: pointer;
+}
+
+.item {
+  width: calc(100% - 50px);
+  margin-top: 25px;
+  align-self: baseline;
+}
+
+@media screen and (max-width: 676px) {
+  .item-img {
+    max-width: calc(100% - 50px);
+  }
+
+  .item {
+    width: 100%;
+  }
+}
+.item-descr {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 676px) {
+  .item-descr {
+    max-width: calc(100% - 45px);
+  }
+}
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+@media screen and (max-width: 676px) {
+  .mobile-left {
+    align-items: flex-start !important;
+  }
+
+  .grid-m-2-columns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+h2 {
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.text-normal {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
 }
 
 .logo img {
@@ -149,8 +231,9 @@ body {
   width: 24px;
   padding-right: 15px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 676px) {
   .logo img {
+    max-width: 100%;
     padding-right: 15px;
   }
 }
@@ -175,22 +258,27 @@ p {
   line-height: 24px;
 }
 
-.page-similar .artist, .page-discography .discography-item p, body {
+.artist, body {
   font-size: 18px;
   line-height: 27px;
 }
 
-.page-popular-track .track-info p, .artist-description .buttons .btn, .page-app .btn, .page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
-  font-size: 12.8px;
-  line-height: 19.2px;
+.track-time, .track-descr, .btn-red-app, .small-font, .pricing-footer, .logo {
+  font-size: 13px;
+  line-height: 19px;
 }
 
-header .wrap p, header .container {
+input {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.small-header, header {
   font-size: 11px;
-  line-height: 12.89px;
+  line-height: 13px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 676px) {
   h1 {
     font-size: 30px;
     line-height: 45px;
@@ -206,50 +294,50 @@ header .wrap p, header .container {
     line-height: 24px;
   }
 
-  .page-similar .artist, .page-discography .discography-item p, body {
+  .artist, body {
     font-size: 18px;
     line-height: 24px;
   }
 
-  .page-popular-track .track-info p, .artist-description .buttons .btn, .page-app .btn, .page-news .btn, .page-news .news-author p, .page-pricing .pricing-footer, .logo {
-    font-size: 12.8px;
-    line-height: 19.2px;
+  .track-time, .track-descr, .btn-red-app, .small-font, .pricing-footer, .logo {
+    font-size: 13px;
+    line-height: 19px;
   }
 }
-header .wrap, header input, .page-popular-track .track-info, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container, .page-discography .container, .page-popular-track .popular-track, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item, .page-popular-track, .page-app, .page-description .order-form, .artist-description .container, .page-pricing .pricing-value, .page-similar .container, .page-popular-track .container, .artist-description .buttons, header .horizontal-menu, .page-news .news-wrap, header, body, main, section, footer, .container, .btn, .logo {
+.upper-text {
+  text-transform: uppercase;
+}
+
+.wrap, input, .track-info, .upper-footer, .inputs, .popular-track, .descr-btn, .lower-footer, .img-app, .order-form, .a-left-container, .pricing-value, .similar-info, header, .buttons, .horizontal-menu, footer, body, main, section, .c-flex-column, .c-flex-row, .logo {
   display: flex;
 }
 
-.page-popular-track .track-info, footer .upper-footer, .page-pricing .items, .page-description .inputs, header .container {
+.track-info, .upper-footer, .inputs, .c-flex-row {
   justify-content: space-between;
 }
 
-.page-discography .container, .page-popular-track .popular-track, .artist-description .buttons .btn, footer .lower-footer, .page-app .container, .page-news .news-item {
+.popular-track, .descr-btn, .lower-footer {
   justify-content: flex-start;
 }
 
-.page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track, .page-app, .page-description .order-form, header .wrap, body, .container, .logo {
+.track-info, .popular-track, .descr-btn, .img-app, .order-form, .wrap, body, section, .c-flex-column, .logo {
   align-items: center;
 }
 
-.artist-description .container, .page-app .container {
+.a-left-container, .pricing-value {
   align-items: flex-start;
 }
 
-.page-pricing .pricing-value, header, section, footer, .btn {
+.similar-info, .img-app, .pricing-value, header, section, footer {
   justify-content: center;
 }
 
-.page-similar .container, .page-discography .container, .page-popular-track .track-info, .page-popular-track .popular-track, .page-popular-track .container, .artist-description .buttons, footer .lower-footer, footer .upper-footer, .page-app .container, .page-news .news-item, .page-pricing .pricing-value, .page-pricing .items, .page-description .inputs, header .horizontal-menu, header .container, .logo {
+.track-info, .popular-track, .buttons, .lower-footer, .upper-footer, .pricing-value, .inputs, .horizontal-menu, header, .c-flex-row, .logo {
   flex-direction: row;
 }
 
-.page-popular-track, .page-app, .page-news .news-wrap, .page-description .order-form, body, main, .container {
+footer, .order-form, body, main, section, .c-flex-column {
   flex-direction: column;
-}
-
-header {
-  width: 100%;
 }
 
 html, body {
@@ -274,69 +362,78 @@ footer {
   flex: 0 0 auto;
 }
 
-header .container {
-  position: absolute;
+header {
+  position: relative;
+  background: transparent;
+  width: 100%;
   z-index: 9999;
-  margin-top: 20px;
   margin-left: 30px;
   margin-right: 30px;
+  padding-top: 25px;
 }
-header input {
+
+@media screen and (max-width: 676px) {
+  header {
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 676px) {
+  .small-header {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+input {
   background-color: #3C3B3D;
   color: #cacaca;
   border-radius: 15px;
-  height: 1.6em;
+  height: 1.5em;
   align-self: center;
   border: 1px solid #3C3B3D;
-  padding: 0 0 0 10px;
-  width: 21%;
+  padding: 10px 40px 10px 10px;
 }
-header .horizontal-menu {
-  list-style: none;
-  margin-left: 40px;
-}
-header .horizontal-menu li {
-  margin-right: 5px;
-}
-header nav a {
-  text-decoration: none;
-  padding: 10px;
-  color: #cacaca;
-}
-@media screen and (max-width: 600px) {
-  header .container {
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    margin: 0;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+
+@media screen and (max-width: 676px) {
+  input {
+    font-size: 13px;
+    line-height: 15px;
+    width: 100%;
   }
-  header .wrap {
+}
+@media screen and (max-width: 676px) {
+  .wrap {
+    padding-top: 25px;
     flex-direction: column;
     align-items: flex-start;
-    align-content: flex-start;
-    padding-left: 0;
   }
-  header .horizontal-menu {
+}
+.horizontal-menu {
+  list-style: none;
+  margin: 0 0 0 50px;
+}
+
+@media screen and (max-width: 676px) {
+  .horizontal-menu {
     text-align: left;
     flex-direction: column;
     margin-left: 0;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
     padding-left: 0;
+  }
+  .horizontal-menu li {
     line-height: 15px;
   }
-  header nav a {
-    padding: 0;
-  }
-  header input {
-    border: 2px solid #3C3B3D;
-    font-size: 13.3px;
-    line-height: 15.29px;
-    width: 90%;
-    padding: 10px 0 10px 10px;
-  }
+}
+nav a {
+  text-decoration: none;
+  padding-right: 25px;
+  color: #ffffff;
 }
 
 .page-description {
@@ -345,72 +442,89 @@ header nav a {
   background-size: cover;
   padding: 200px 0;
 }
-.page-description .order-form {
+
+.order-form {
   max-width: 570px;
   width: 100%;
   line-height: 5px;
 }
-.page-description .input {
+
+.sqr-input {
+  border-radius: 0;
   max-width: 270px;
   min-height: 50px;
-  width: 43%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  max-width: 270px;
   padding: 0 0 0 20px;
   margin-bottom: 1.5rem;
-  border: 2px solid #cacaca;
+  border: 1px solid #cacaca;
   background: transparent;
   color: #ffffff;
 }
-.page-description .inputs {
+
+.inputs {
   width: 100%;
   font-size: 14px;
-  line-height: 16.41px;
+  line-height: 16px;
 }
-.page-description .btn.green {
+
+.btn-green {
   border: 1px solid #34C176;
   background-color: #34C176;
   padding: 25px 30px;
-  font-size: 13.3px;
-}
-.page-description .wrap {
+  font-size: 13px;
   width: 100%;
-}
-.page-description h1 {
   margin: 0;
-}
-.page-description h2 {
-  margin: 0;
-}
-.page-description p {
-  margin-top: 30px;
-}
-@media screen and (max-width: 600px) {
-  .page-description .inputs {
-    width: 100%;
-    display: block;
-    margin-bottom: 3px;
-  }
-  .page-description .input {
-    padding-right: 190px;
-    min-height: 45px;
-  }
-  .page-description h1 {
-    margin-top: 45px;
-  }
-  .page-description p {
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
 }
 
-.page-pricing {
-  top: 0;
-}
-.page-pricing .items {
+.wrap {
   width: 100%;
-  margin-bottom: 30px;
-  flex: 1;
 }
-.page-pricing .pricing-item {
+
+.h1-home {
+  margin: 10px 0 0 0;
+}
+
+.mar-t-30 {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 676px) {
+  .h1-home {
+    margin-top: 60px;
+  }
+
+  .mar-t-30 {
+    margin-top: 10px;
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+
+  .sqr-input {
+    max-width: 100% !important;
+  }
+
+  .btn-green {
+    width: calc(100% - 60px);
+  }
+
+  .btn-green-wrap {
+    padding-top: 0;
+  }
+}
+.items {
+  width: 100%;
+  margin-bottom: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  grid-gap: 50px;
+}
+
+.pricing-item {
   flex: 1;
   padding: 0 1.5rem;
   border-radius: 1rem;
@@ -418,462 +532,378 @@ header nav a {
   background-size: cover;
   padding-bottom: 10px;
 }
-.page-pricing .pricing-item + .pricing-item {
-  margin-left: 45px;
-}
-.page-pricing .bg-free {
+
+.bg-free {
   background-image: url("../images/subscribe_1.png");
 }
-.page-pricing .bg-standart {
+
+.bg-standart {
   background-image: url("../images/subscribe_2.png");
 }
-.page-pricing .bg-premium {
+
+.bg-premium {
   background-image: url("../images/subscribe_3.png");
 }
-.page-pricing .pricing-value {
+
+.pricing-value {
   line-height: 1rem;
   margin-bottom: 35px;
   margin-right: 10px;
-  align-items: flex-start;
 }
-.page-pricing .pricing-value .price {
+
+.price {
   font-size: 64px;
   line-height: 64px;
 }
-.page-pricing .pricing-value .value {
+
+.value {
   font-size: 32px;
   line-height: 48px;
   padding-left: 12px;
 }
-.page-pricing .pricing-footer {
+
+.pricing-footer {
   padding: 0;
   margin-top: 65px;
   margin-bottom: 55px;
 }
-.page-pricing .section-footer {
+
+.section-footer {
   margin-bottom: 0;
-  margin-top: 5px;
+  margin-top: 0;
 }
-.page-pricing h2 {
+
+.h2-pricing {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 100px;
   padding-bottom: 50px;
 }
-.page-pricing h3 {
+
+.h3-pricing {
   padding-bottom: 200px;
   margin-top: 15px;
   margin-bottom: 0;
 }
-@media screen and (max-width: 600px) {
-  .page-pricing .items {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    margin-bottom: 40px;
-  }
-  .page-pricing .pricing-item {
-    padding-bottom: 0;
-    height: 32%;
-  }
-  .page-pricing .pricing-value {
-    margin-bottom: 40px;
-  }
-  .page-pricing .pricing-footer {
-    margin-top: 65px;
-    margin-bottom: 55px;
-  }
-  .page-pricing .pricing-item + .pricing-item {
-    margin-left: 0;
-    margin-top: 50px;
-  }
-  .page-pricing .section-footer {
-    margin-top: 25px;
-  }
-  .page-pricing h3 {
-    margin-top: 15px;
-  }
+
+.btn-pricing {
+  display: block;
+  width: calc(100% - 60px);
 }
 
-.page-news .news-item {
-  width: 100%;
-  margin-bottom: 65px;
+@media screen and (max-width: 676px) {
+  .items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .btn-pricing {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .pricing-value {
+    margin-bottom: 40px;
+  }
 }
-.page-news .news-wrap {
-  margin-left: 55px;
+.news-item {
+  grid-gap: 50px;
+}
+
+.news-wrap {
   text-align: left;
 }
-.page-news .autor {
-  color: #F89202;
+
+.news-author {
+  margin-bottom: 45px;
 }
-.page-news .news-body p {
+.news-author img {
+  width: 19px;
+  height: 19px;
+}
+
+.autor {
+  color: #F89202;
+  margin-right: 15px;
+}
+
+.news-body {
   margin-bottom: 10px;
 }
-.page-news .news-reverse {
-  flex-direction: row-reverse;
-  margin-bottom: 0;
-}
-.page-news .news-reverse .news-wrap {
-  margin-left: 0;
-  margin-right: 55px;
-}
-.page-news .news-reverse .news-footer {
-  margin-top: -5px;
-}
-.page-news .news-author p {
-  padding-right: 15px;
-}
-.page-news .news-author img {
-  height: 19px;
-  width: 19px;
-}
-.page-news .btn {
-  border-width: 1px;
-  padding: 15px 25px;
-  margin-top: 35px;
-  width: 15%;
-}
-.page-news h2 {
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-.page-news h3 {
-  font-size: 29px;
-  line-height: 40px;
-  margin-top: 0;
-  margin-bottom: 35px;
-}
-@media screen and (max-width: 600px) {
-  .page-news .container {
-    flex-direction: column;
-    margin: 0;
-    padding: 0 20px;
-  }
-  .page-news .news-item {
-    flex-direction: column;
-  }
-  .page-news .news-item img {
-    width: 100%;
-  }
-  .page-news .news-wrap {
-    margin-left: 0;
-    margin-top: 40px;
-  }
-  .page-news .logo img {
-    width: 1.5em;
-    padding-right: 15px;
-  }
-  .page-news .btn {
-    width: 22%;
-  }
-  .page-news .news-reverse .news-wrap {
-    margin-right: 0;
-  }
-  .page-news .news-reverse h3 {
-    margin-bottom: 10px;
-  }
-  .page-news .news-body p {
-    margin-top: 0;
-  }
-  .page-news .news-footer {
-    margin-top: 5px;
-  }
-  .page-news h3 {
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
+
+.grid-reverse {
+  grid-template-areas: "grid-descr grid-img";
+  margin-top: 60px;
 }
 
-.page-app {
-  padding: 0 20px;
-  text-align: center;
-  margin-bottom: 100px;
+.grid-img {
+  grid-area: grid-img;
 }
-.page-app .container {
-  margin-top: 40px;
+
+.grid-desrc {
+  grid-area: grid-desrc;
 }
-.page-app .description {
+
+.btn-news {
+  padding: 16px 30px 16px 30px;
+}
+
+.h2-news {
+  margin-bottom: 50px;
+}
+
+.h3-news {
+  font-size: 30px;
+  line-height: 45px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 676px) {
+  .news-item {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .news-img {
+    width: 100%;
+  }
+
+  .h3-news {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .grid-reverse {
+    display: block;
+    margin-top: 80px;
+  }
+
+  .grid-img {
+    margin-bottom: 45px;
+  }
+}
+.description-app {
   text-align: left;
-  width: 50%;
 }
-.page-app .btn {
+
+.img-app {
+  align-self: center;
+}
+
+.btn-red-app {
   padding: 15px 35px;
   border-color: #95390C;
   border-radius: 2rem;
   background-color: #95390C;
   color: #ffffff;
-  width: 10%;
-}
-.page-app img {
-  margin-left: 150px;
-}
-.page-app h2 {
-  margin-top: 100px;
-  margin-bottom: 10px;
-}
-@media screen and (max-width: 600px) {
-  .page-app .container {
-    padding: 0 20px;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .page-app .description {
-    margin-top: -35px;
-    width: 102%;
-  }
-  .page-app .btn {
-    padding: 15px 45px;
-  }
-  .page-app img {
-    width: 100%;
-    margin: 0;
-  }
 }
 
+.mar-t-20 {
+  margin-top: 20px;
+}
+
+.mar-b-30 {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 676px) {
+  .mobile-reverse {
+    flex-direction: column-reverse !important;
+  }
+
+  .img-app {
+    width: 100%;
+  }
+  .img-app img {
+    width: 100%;
+    margin-bottom: -35px;
+  }
+
+  .m-bot-30 {
+    margin-top: 10px;
+  }
+}
 footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
-footer .upper-footer {
+
+.upper-footer {
   line-height: 3rem;
   width: 100%;
   margin-bottom: 55px;
 }
-footer .upper-footer ul {
+.upper-footer ul {
   list-style: none;
   text-align: left;
   padding-left: 0;
   padding-top: 45px;
   margin-top: 0;
   margin-right: 50px;
+  margin-left: 0;
   flex: 1;
 }
-footer .upper-footer ul p {
+.upper-footer ul p {
   font-size: 18px;
 }
-footer .upper-footer .subscribe {
-  margin-right: 10px;
-}
-footer .upper-footer .subscribe p {
-  margin-bottom: 10px;
-}
-footer .upper-footer .subscribe img {
-  margin-right: 20px;
-}
-footer .upper-footer li {
+.upper-footer li {
   font-size: 16px;
   line-height: 24px;
 }
-footer .lower-footer {
+.upper-footer .subscribe {
+  margin-right: 10px;
+}
+.upper-footer .subscribe p {
+  margin-bottom: 10px;
+}
+.upper-footer .subscribe img {
+  margin-right: 20px;
+}
+
+.lower-footer {
   margin-top: 25px;
   line-height: 2rem;
   width: 100%;
 }
-footer .lower-footer p {
+.lower-footer p {
   margin-right: 15px;
 }
-footer .border {
-  width: 100vw;
+
+.border {
+  width: 100%;
   border-top: 1px solid #ffffff;
 }
+
 @media screen and (max-width: 600px) {
-  footer .upper-footer {
+  .upper-footer {
     flex-direction: column;
     padding-top: 45px;
     margin-bottom: 45px;
   }
-  footer .upper-footer ul {
+  .upper-footer ul {
     margin-top: 0;
     margin-bottom: 12px;
     padding-top: 0;
-    margin-left: 20px;
+    margin-left: 0;
   }
-  footer .lower-footer {
-    padding-left: 35px;
+
+  .lower-footer {
+    padding-left: 0;
     flex-direction: column;
     text-align: left;
   }
-  footer .lower-footer p {
+  .lower-footer p {
+    text-align: left;
     margin-bottom: 0;
   }
 }
-
 .artist-description {
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
   padding: 200px 0;
 }
-.artist-description .container {
-  margin-top: 0;
-}
-.artist-description .buttons {
-  margin-top: 30px;
+
+.buttons {
+  margin-top: 35px;
   margin-bottom: 25px;
   width: 100%;
 }
-.artist-description .buttons .btn {
-  width: 11%;
-  margin-right: 25px;
+
+.descr-btn {
+  padding: 15px 30px;
 }
-.artist-description .buttons .purple {
+
+.btn-purple {
   background-color: #5328A1;
   border-color: #5328A1;
 }
-.artist-description .buttons .red {
+
+.btn-red {
   background-color: #95390C;
   border-color: #95390C;
 }
-.artist-description .buttons img {
+
+.btn-img {
   height: 1.5em;
   margin-right: 15px;
 }
-.artist-description h1 {
+
+.h1-artist {
   margin-bottom: 0;
+  margin-top: 60px;
 }
+
 @media screen and (max-width: 600px) {
-  .artist-description .buttons {
+  .buttons {
     flex-direction: column;
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
-  .artist-description .buttons .btn {
+
+  .descr-btn {
     width: 35%;
     margin-bottom: 25px;
   }
-}
 
-.page-popular-track {
-  text-align: left;
+  .a-left-container {
+    align-items: flex-start !important;
+  }
+
+  .h1-artist {
+    margin-top: 30px;
+  }
 }
-.page-popular-track .container {
-  flex-wrap: wrap;
-}
-.page-popular-track .popular-track {
-  min-width: 40%;
-  flex: 1;
-  margin-right: 50px;
+.popular-track {
+  width: calc(100% - 50px);
   margin-top: 25px;
 }
-.page-popular-track .popular-track img {
+
+.track-img {
   height: 55px;
   width: 55px;
   margin-right: 15px;
 }
-.page-popular-track .track-info {
+
+.track-info {
   flex-grow: 1;
 }
-.page-popular-track .track-info p {
+
+.track-descr {
   margin-bottom: 0;
   margin-top: 0;
 }
-.page-popular-track .track {
+
+.track {
   text-align: left;
 }
-.page-popular-track h2 {
-  margin-top: 100px;
-  margin-bottom: 25px;
-  width: 100%;
-  text-align: left;
-}
-@media screen and (max-width: 600px) {
-  .page-popular-track {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .page-popular-track .container {
-    flex-direction: column;
-  }
-  .page-popular-track .popular-track {
-    width: 100%;
+
+@media screen and (max-width: 676px) {
+  .popular-track {
     margin-right: 0;
   }
-}
 
-.page-discography .container {
-  flex-wrap: wrap;
+  .mobile-no-padding {
+    padding: 0;
+  }
 }
-.page-discography .discography-item {
-  text-align: left;
-  min-width: 20%;
-  max-width: 23%;
-  margin-right: 50px;
+.similar-item {
+  width: calc(25% - 50px);
   margin-top: 25px;
 }
-.page-discography .discography-item p {
-  margin: 0;
-}
-.page-discography .discography-info {
+
+.similar-info {
   margin-top: 10px;
 }
-.page-discography .album {
-  font-weight: bold;
-}
-.page-discography h2 {
-  margin-top: 100px;
-  margin-bottom: 25px;
-  width: 100%;
-  text-align: left;
-}
-@media screen and (max-width: 600px) {
-  .page-discography .container {
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  .page-discography .discography-item {
-    margin-right: 50px;
-    flex: 1;
-    min-width: 35%;
-    max-width: 40%;
-  }
-  .page-discography .discography-item img {
-    width: 100%;
-  }
-  .page-discography .discography-item p {
-    width: 105%;
-  }
-  .page-discography .discography-info {
-    margin-top: 15px;
-  }
+
+.descr-center {
+  text-align: center;
 }
 
-.page-similar .container {
-  flex-wrap: wrap;
-  margin-bottom: 100px;
-}
-.page-similar .similar-item {
-  margin-right: 50px;
-  margin-top: 25px;
-}
-.page-similar .similar-item p {
-  margin: 0;
-}
-.page-similar .similar-info {
-  margin-top: 10px;
-}
-.page-similar h2 {
-  margin-top: 100px;
-  margin-bottom: 25px;
-  width: 100%;
-  text-align: left;
-}
-@media screen and (max-width: 600px) {
-  .page-similar .container {
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  .page-similar .similar-item {
-    margin-right: 50px;
-    flex: 1;
-    min-width: 35%;
-    max-width: 40%;
-  }
-  .page-similar .similar-item img {
-    width: 100%;
-  }
-  .page-similar .similar-info {
-    margin-top: 15px;
+@media screen and (max-width: 676px) {
+  .descr-center {
+    max-width: calc(100% - 50px);
   }
 }
-
 @font-face {
   font-family: "Roboto";
   font-style: normal;

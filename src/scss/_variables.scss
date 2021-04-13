@@ -8,6 +8,8 @@ $purple: #5328A1;
 $red: #95390C;
 $white: #ffffff;
 
+$padding-item: 1.5rem;
+
 @mixin desktop-fonts {
   h1 {
     font-size: 60px;
@@ -35,13 +37,19 @@ $white: #ffffff;
   }
 
   %small-font {
-    font-size: 12.8px;
-    line-height: 19.2px;
+    font-size: 13px;
+    line-height: 19px;
   }
+
+  %header-font {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
 
   %small-header {
     font-size: 11px;
-    line-height: 12.89px;
+    line-height: 13px;
   }
 
 
@@ -69,7 +77,7 @@ $white: #ffffff;
   }
 
   %small-font {
-    font-size: 12.8px;
-    line-height: 19.2px;
+    font-size: 13px;
+    line-height: 19px;
   }
 }

@@ -3,78 +3,82 @@
   background-position: center;
   background-size: cover;
   padding: 200px 0;
+}
 
-    .order-form {
-    max-width: 570px;
-    width: 100%;
-    line-height: 5px;
-    @extend %flex-column;
-    @extend %a-center;
-  }
+.order-form {
+  max-width: 570px;
+  width: 100%;
+  line-height: 5px;
+  @extend %flex-column;
+  @extend %a-center;
+}
 
-.input {
-    max-width: 270px;
-    min-height: 50px;
-    width: 43%;
-    padding: 0 0 0 20px;
-    margin-bottom: 1.5rem;
-    border: 2px solid $dark-grey;
-    background: transparent;
-    color: $white;
-  }
+.sqr-input {
+  border-radius: 0;
+  max-width: 270px;
+  min-height: 50px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  max-width: 270px;
+  padding: 0 0 0 20px;
+  margin-bottom: 1.5rem;
+  border: 1px solid $dark-grey;
+  background: transparent;
+  color: $white;
+}
 
 .inputs {
-    width: 100%;
-    font-size: 14px;
-    line-height: 16.41px;
-    @extend %flex-row;
-    @extend %j-between;
-  }
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  @extend %flex-row;
+  @extend %j-between;
+}
 
-.btn.green {
-    border: 1px solid $green;
-    background-color: $green;
-    padding: 25px 30px;
-    font-size: 13.3px;
-  }
+.btn-green {
+  border: 1px solid $green;
+  background-color: $green;
+  padding: 25px 30px;
+  font-size: 13px;
+  width: 100%;
+  margin: 0;
+}
 
 .wrap {
-    width: 100%;
+  width: 100%;
+}
+
+.h1-home {
+  margin: 10px 0 0 0;
+}
+
+.mar-t-30 {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 676px) {
+  .h1-home {
+    margin-top:  60px;
   }
 
-  h1 {
-    margin: 0;
+  .mar-t-30 {
+    margin-top: 10px;
   }
 
-  h2 {
-    margin: 0;
+  .inputs {
+    flex-direction: column;
   }
 
-  p {
-    margin-top: 30px;
+  .sqr-input {
+    max-width: 100% !important;
   }
 
-  @media screen and (max-width: 600px) {
-
-    .inputs {
-      width: 100%;
-      display: block;
-      margin-bottom: 3px;
-    }
-
-    .input {
-    padding-right: 190px;
-    min-height: 45px;
-    }
-
-    h1 {
-      margin-top: 45px;
-    }
-
-    p {
-      margin-top: 20px;
-      margin-bottom: 15px;
-    }
+  .btn-green {
+    width: calc(100% - 60px);
   }
 
+  .btn-green-wrap {
+    padding-top: 0;
+  }
 }

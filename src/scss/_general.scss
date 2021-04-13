@@ -8,32 +8,139 @@ body {
   background-color: $bg-color;
 }
 
+section {
+  @extend %flex-column;
+  @extend %a-center;
+}
+
+
+.c-flex-column {
+  @extend %flex-column;
+  @extend %a-center;
+}
+
+.c-flex-row {
+  @extend %flex-row;
+  @extend %j-between;
+}
+
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+}
+
+.grid-4-columns {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+}
+
+
 .container {
   width: 100%;
   max-width: 1200px;
   text-align: center;
-  @extend %flex-column;
-  @extend %a-center;
-
+  align-self: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 676px) {
   .container {
+    box-sizing: border-box;
     padding: 0 20px;
     left: 0;
     right: 0;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
   }
 }
 
+main {
+  position: relative;
+  top: -60px;
+}
+
+@media screen and (max-width: 676px) {
+  main {
+    top: -180px;
+  }
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
 .btn {
+  width: 140px;
   padding: 20px 30px;
   border-radius: 5px;
   border: 1px solid $white;
   text-decoration: none;
   color: $white;
-  font-size: 16px;
+  font-size: 13px;
+  margin-right: 1.5rem;
   cursor: pointer;
-  @extend %j-center;
+}
+
+.item {
+  width: calc(100% - 50px);
+  margin-top: 25px;
+  align-self: baseline;
+}
+
+@media screen and (max-width: 676px) {
+  .item-img {
+    max-width: calc(100% - 50px);
+  }
+
+  .item {
+    width: 100%;
+  }
+}
+
+.item-descr {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 676px) {
+.item-descr {
+  max-width: calc(100% - 45px);
+}
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+  @media screen and (max-width: 676px) {
+    .mobile-left {
+      align-items: flex-start !important;
+    }
+
+    .grid-m-2-columns {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+  }
+
+h2 {
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.text-normal {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
 }
 
 .logo {
@@ -47,15 +154,21 @@ body {
     padding-right: 15px;
   }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 676px){
     img {
+      max-width: 100%;
       padding-right: 15px;
     }
   }
 }
 
+
 @include desktop-fonts;
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 676px) {
   @include mobile-fonts;
+}
+
+.upper-text {
+  text-transform: uppercase;
 }

@@ -1,25 +1,18 @@
-.page-pricing {
-  top:0;
-
-  .items {
+.items {
     width: 100%;
-    margin-bottom: 30px;
-    flex: 1;
-    @extend %flex-row;
-    @extend %j-between;
+    margin-bottom: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    grid-gap: 50px;
   }
 
   .pricing-item {
     flex: 1;
-    padding: 0 1.5rem;
+    padding: 0 $padding-item;
     border-radius: 1rem;
     background-position: center;
     background-size: cover;
     padding-bottom: 10px;
-  }
-
-  .pricing-item +.pricing-item {
-    margin-left: 45px;
   }
 
   .bg-free {
@@ -39,19 +32,19 @@
     margin-bottom: 35px;
     margin-right: 10px;
     @extend %flex-row;
-    align-items: flex-start;
+    @extend %a-start;
     @extend %j-center;
+}
 
-    .price {
-      font-size: 64px;
-      line-height: 64px;
+.price {
+    font-size: 64px;
+    line-height: 64px;
+  }
 
-    }
-    .value {
-      font-size: 32px;
-      line-height: 48px;
-      padding-left: 12px;
-    }
+  .value {
+    font-size: 32px;
+    line-height: 48px;
+    padding-left: 12px;
   }
 
   .pricing-footer {
@@ -63,56 +56,41 @@
 
   .section-footer {
     margin-bottom: 0;
-    margin-top: 5px;
+    margin-top: 0;
   }
 
-  h2 {
+  .h2-pricing {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 100px;
     padding-bottom: 50px;
   }
 
-  h3 {
+  .h3-pricing {
     padding-bottom: 200px;
     margin-top: 15px;
     margin-bottom: 0;
   }
 
-@media screen and (max-width: 600px) {
-
-  .items {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    margin-bottom: 40px;
+  .btn-pricing {
+    display: block;
+    width: calc(100% - 60px);
   }
 
-  .pricing-item {
-    padding-bottom: 0;
-    height: 32%;
+@media screen and (max-width: 676px) {
+
+  .items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .btn-pricing {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .pricing-value {
     margin-bottom: 40px;
   }
-
-  .pricing-footer {
-    margin-top: 65px;
-    margin-bottom: 55px;
-  }
-
-  .pricing-item +.pricing-item {
-    margin-left: 0;
-    margin-top: 50px;
-  }
-
-  .section-footer {
-    margin-top: 25px;
-  }
-
-  h3 {
-    margin-top: 15px;
-  }
-}
 }
