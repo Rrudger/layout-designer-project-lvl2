@@ -2,13 +2,13 @@
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .order-form {
   max-width: 570px;
   width: 100%;
-  line-height: 5px;
   @extend %flex-column;
   @extend %a-center;
 }
@@ -26,12 +26,16 @@
   border: 1px solid $dark-grey;
   background: transparent;
   color: $white;
+
 }
+  .sqr-input::placeholder {
+  color: $white;
+}
+
 
 .inputs {
   width: 100%;
   font-size: 14px;
-  line-height: 16px;
   @extend %flex-row;
   @extend %j-between;
 }
@@ -39,27 +43,26 @@
 .btn-green {
   border: 1px solid $green;
   background-color: $green;
-  padding: 25px 30px;
-  font-size: 13px;
   width: 100%;
   margin: 0;
 }
 
-.wrap {
+.btn-green-wrap {
   width: 100%;
-}
-
-.h1-home {
-  margin: 10px 0 0 0;
+  text-align: center;
 }
 
 .mar-t-30 {
   margin-top: 30px;
 }
 
+.h1-descr {
+  margin: 0;
+}
+
 @media screen and (max-width: 676px) {
-  .h1-home {
-    margin-top:  60px;
+  .h1-descr {
+    margin-top:  50px;
   }
 
   .mar-t-30 {
@@ -71,11 +74,7 @@
   }
 
   .sqr-input {
-    max-width: 100% !important;
-  }
-
-  .btn-green {
-    width: calc(100% - 60px);
+    max-width: 100%;
   }
 
   .btn-green-wrap {

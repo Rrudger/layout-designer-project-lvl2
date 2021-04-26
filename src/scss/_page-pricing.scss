@@ -2,7 +2,7 @@
     width: 100%;
     margin-bottom: 35px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-gap: 50px;
   }
 
@@ -28,23 +28,22 @@
   }
 
   .pricing-value {
-    line-height: 1rem;
-    margin-bottom: 35px;
+    margin-top: 0;
+    margin-bottom: 25px;
     margin-right: 10px;
-    @extend %flex-row;
-    @extend %a-start;
     @extend %j-center;
+    @extend %a-center;
 }
 
 .price {
     font-size: 64px;
-    line-height: 64px;
+    padding-top: 15px;
   }
 
   .value {
     font-size: 32px;
-    line-height: 48px;
     padding-left: 12px;
+    margin-top: 0;
   }
 
   .pricing-footer {
@@ -67,12 +66,14 @@
   }
 
   .h3-pricing {
-    padding-bottom: 200px;
-    margin-top: 15px;
+    font-size: 23px;
+    padding-bottom: 170px;
+    margin-top: 25px;
     margin-bottom: 0;
   }
 
   .btn-pricing {
+    font-size: 16px;
     display: block;
     width: calc(100% - 60px);
   }
@@ -85,12 +86,16 @@
     grid-template-rows: 1fr 1fr 1fr;
   }
 
+  .h3-pricing {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
   .btn-pricing {
     font-size: 16px;
-    line-height: 24px;
   }
 
   .pricing-value {
-    margin-bottom: 40px;
+
   }
 }

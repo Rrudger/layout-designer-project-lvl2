@@ -18,6 +18,11 @@
 .autor {
   color: $orange;
   margin-right: 15px;
+  @extend %small-font;
+}
+
+.data {
+  @extend %small-font;
 }
 
 .news-body {
@@ -26,7 +31,11 @@
 
 .grid-reverse {
   grid-template-areas: "grid-descr grid-img";
-  margin-top: 60px;
+  margin-top: 65px;
+
+  .news-body {
+    margin-bottom: 0;
+  }
 }
 
 .grid-img {
@@ -35,10 +44,6 @@
 
 .grid-desrc {
   grid-area: grid-desrc;
-}
-
-.small-font {
-  @extend %small-font;
 }
 
 .btn-news {
@@ -51,8 +56,8 @@
 
 .h3-news {
   font-size: 30px;
-  line-height: 45px;
   margin-top: 0;
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 676px){
@@ -67,7 +72,7 @@
 
   .h3-news {
     font-size: 16px;
-    line-height: 24px;
+    margin-bottom: 15px;
   }
 
   .grid-reverse {

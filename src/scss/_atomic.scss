@@ -43,33 +43,3 @@
   flex-direction: column;
   @extend %flex;
 }
-
-html, body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-	padding: 0;
-  @extend %a-center;
-  @extend %flex-column;
-}
-
-main {
-  position: relative;
-  width: 100%;
-  padding-top: 0;
-  margin-top: 0;
-  flex: 1 0 auto;
-  @extend %flex-column;
-}
-
-section {
-  @extend %j-center;
-}
-
-footer {
-  width: 100%;
-  flex: 0 0 auto;
-  @extend %j-center;
-}
