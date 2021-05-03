@@ -87,11 +87,13 @@ main {
 .grid-2-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
+  grid-row-gap: 25px;
 }
 
 .grid-4-columns {
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-row-gap: 25px;
 }
 
 .container {
@@ -119,7 +121,6 @@ a {
 }
 
 .item {
-  margin-top: 25px;
   align-self: baseline;
 }
 
@@ -139,9 +140,13 @@ a {
   padding: 0;
 }
 
+.margin-r-45 {
+  margin-right: 45px;
+}
+
 h2 {
   margin-top: 100px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .align-left {
@@ -506,13 +511,6 @@ nav a {
   margin-top: 0;
 }
 
-.h2-pricing {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-
 .h3-pricing {
   font-size: 23px;
   font-weight: normal;
@@ -656,10 +654,6 @@ nav a {
   background-color: #95390C;
 }
 
-.container-app {
-  margin-top: 30px;
-}
-
 .p-top {
   margin-top: 10px;
   margin-bottom: 15px;
@@ -742,6 +736,7 @@ footer a {
 
 .lower-footer {
   margin-top: 2rem;
+  margin-bottom: 50px;
   width: 100%;
 }
 .lower-footer p {
@@ -850,10 +845,6 @@ footer a {
     margin-right: 0;
   }
 }
-.popular-track {
-  margin-top: 25px;
-}
-
 .track-img {
   height: 55px;
   width: 55px;
