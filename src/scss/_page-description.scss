@@ -25,26 +25,27 @@
   margin-bottom: 1.5rem;
   border: 1px solid $dark-grey;
   background: transparent;
-  color: $white;
+  color: $white !important;
 
-}
-  .sqr-input::placeholder {
+  input::placeholder {
+    text-weight: bold;
   color: $white;
 }
-
+}
 
 .inputs {
   width: 100%;
   font-size: 14px;
   @extend %flex-row;
   @extend %j-between;
+
+
 }
 
 .btn-green {
   border: 1px solid $green;
   background-color: $green;
   width: 100%;
-  margin: 0;
 }
 
 .btn-green-wrap {

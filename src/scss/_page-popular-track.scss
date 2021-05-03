@@ -1,5 +1,4 @@
 .popular-track {
-  width: calc(100% - 50px);
   margin-top: 25px;
   @extend %flex-row;
   @extend %j-start;
@@ -22,10 +21,13 @@
 .track-descr {
   margin-bottom: 0;
   margin-top: 0;
+  color: $grey;
   @extend %small-font;
 }
 
 .track-time {
+  margin-right: 50px;
+  color: $grey;
   @extend %small-font;
 }
 
@@ -34,13 +36,9 @@
 }
 
   @media screen and (max-width: 676px) {
-  .popular-track {
-    width: 100%;
+    .popular-track {
+      width: 100%;
       margin-right: 0;
-    }
-
-    .mobile-no-padding {
-      padding: 0;
     }
 
     .track-img {

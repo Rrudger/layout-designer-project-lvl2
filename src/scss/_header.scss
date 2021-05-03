@@ -5,9 +5,7 @@ header {
     background: transparent;
     width: 100%;
     z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-top: 25px;
+    top: 25px;
     @extend %small-header;
     @extend %flex-row;
     @extend %j-center;
@@ -23,18 +21,20 @@ header {
   }
 
   .header-input {
+    font-family: Arial, sans-serif;
     background-color: $dark;
-    color: $dark-grey;
+    color: #757575;
     border-radius: 15px;
     height: 1.5em;
     align-self: center;
-    border: 1px solid $dark;
-    padding: 10px 40px 10px 10px;
+    border: 3px solid $dark;
+    padding: 10px 60px 10px 10px;
     @extend %flex;
     @extend %header-font;
   }
 
   .header-wrap {
+    font-weight: bold;
     @extend %flex;
     @extend %j-between;
     @extend %a-center;
@@ -66,6 +66,7 @@ header {
       flex-wrap: wrap;
       margin: 0;
       padding: 0;
+      top: 0;
     }
 
     .header-container {

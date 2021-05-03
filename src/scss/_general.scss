@@ -56,10 +56,9 @@ section {
 .container {
   width:100%;
   max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
   align-self: center;
+  box-sizing: border-box;
 }
 
 .hf-container {
@@ -72,24 +71,27 @@ a {
 }
 
 .btn {
+  display: inline-block;
   padding: 20px 30px;
   border-radius: 5px;
   border: 1px solid $white;
   text-decoration: none;
   color: $white;
   font-size: 13px;
-  margin-right: 1.5rem;
   cursor: pointer;
 }
 
 .item {
-  width: calc(100% - 50px);
   margin-top: 25px;
   align-self: baseline;
 }
 
 .item-descr {
   margin-top: 10px;
+}
+
+.add-inf {
+  color: $grey;
 }
 
 .no-margin {
@@ -134,11 +136,24 @@ img {
     text-transform: uppercase;
   }
 
+  .t-bold {
+    font-weight: bold;
+  }
+
+  .color-d-grey {
+    color: $dark-grey;
+  }
+
+  .color-grey {
+    color: $grey;
+  }
+
   @include desktop-fonts;
 
-  @media screen and (max-width: 1200px) and (min-width: 676px) {
+  @media screen and (max-width: 1200px) {
     .container {
-      width: calc(100% - 40px);
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
@@ -155,10 +170,6 @@ img {
 
   .item {
     width: 100%;
-  }
-
-  .item-descr {
-    max-width: calc(100% - 45px);
   }
 
   .grid-m-2-columns {

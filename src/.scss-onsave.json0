@@ -1,0 +1,10 @@
+{
+    "inputDir": "/scss/",
+    "outputDir": "/css/",
+    "useNpmSass": true,
+    "style":"expanded",
+    "sourcemap":"relative",
+    "showStartup":false,
+    "showOutput":false,
+    "showError":true
+}
