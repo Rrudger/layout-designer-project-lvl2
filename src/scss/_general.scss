@@ -45,14 +45,16 @@ section {
 
 .grid-2-columns {
   display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, minmax(260px, calc(50% - 50px)));
   grid-row-gap: 25px;
+  grid-column-gap: 50px;
 }
 
 .grid-4-columns {
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-columns: repeat(4, minmax(100px, calc(25% - 50px)));
   grid-row-gap: 25px;
+  grid-column-gap: 50px;
 }
 
 .container {
@@ -103,8 +105,8 @@ a {
   padding: 0;
 }
 
-.margin-r-45 {
-  margin-right: 45px;
+.no-wrap {
+  white-space: nowrap;
 }
 
 h2 {
@@ -169,10 +171,6 @@ img {
     flex-direction: column;
   }
 
-  .item-img {
-    max-width: calc(100% - 50px);
-  }
-
   .item {
     width: 100%;
   }
@@ -180,7 +178,7 @@ img {
   .grid-m-2-columns {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-columns: repeat(2, minmax(100px, calc(50% - 50px)));
   }
 
   img {

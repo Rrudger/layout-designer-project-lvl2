@@ -1,7 +1,4 @@
-
-
 .popular-track {
-  //margin-bottom: 25px;
   @extend %flex-row;
   @extend %j-start;
   @extend %a-center;
@@ -28,7 +25,6 @@
 }
 
 .track-time {
-  margin-right: 50px;
   color: $grey;
   @extend %small-font;
 }
