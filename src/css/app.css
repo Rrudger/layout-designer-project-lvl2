@@ -91,6 +91,11 @@ main {
   grid-column-gap: 50px;
 }
 
+.grid-2-columns-home {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+}
+
 .grid-4-columns {
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, calc(25% - 50px)));
@@ -401,9 +406,9 @@ nav a {
   margin-bottom: 1.5rem;
   border: 1px solid #cacaca;
   background: transparent;
-  color: #ffffff !important;
 }
-.sqr-input input::placeholder {
+
+.sqr-input::placeholder {
   text-weight: bold;
   color: #ffffff;
 }
@@ -437,8 +442,8 @@ nav a {
     margin-top: 50px;
   }
 
-  .mar-t-30 {
-    margin-top: 10px;
+  .p-mob-descr {
+    margin-top: 15px;
   }
 
   .inputs {
@@ -529,6 +534,8 @@ nav a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 45px;
+    margin-bottom: 40px;
   }
 
   .h3-pricing {
@@ -540,12 +547,6 @@ nav a {
     font-size: 16px;
   }
 }
-.grid-2-columns-news {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 1fr));
-  grid-column-gap: 50px;
-}
-
 .news-item {
   grid-gap: 50px;
 }
@@ -638,6 +639,10 @@ nav a {
     margin-bottom: 45px;
   }
 }
+.container-app {
+  grid-gap: 0;
+}
+
 .page-app {
   margin-bottom: 100px;
 }
@@ -652,7 +657,7 @@ nav a {
 }
 
 .btn-red-app {
-  padding: 15px 35px;
+  padding: 15px 40px;
   border-color: #95390C;
   border-radius: 2rem;
   background-color: #95390C;
@@ -665,11 +670,11 @@ nav a {
 
 .p-bottom {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 676px) {
-  .mobile-reverse {
+  .container-app {
     flex-direction: column-reverse;
     margin: 0;
   }
@@ -710,8 +715,7 @@ footer a {
   list-style: none;
   text-align: left;
   padding-left: 0;
-  margin-top: 0;
-  margin-left: 0;
+  margin: 0;
   color: #E0E0E0;
 }
 .upper-footer ul p {
@@ -733,7 +737,7 @@ footer a {
 
 .footer-h2 {
   font-size: 18px;
-  margin-top: 50px;
+  margin-top: 45px;
   margin-bottom: 0;
   text-align: start;
 }
@@ -745,6 +749,7 @@ footer a {
 }
 .lower-footer p {
   margin-right: 15px;
+  margin-top: 0;
 }
 .lower-footer ul {
   color: #E0E0E0;
@@ -753,6 +758,8 @@ footer a {
 .border {
   width: 100%;
   border-top: 1px solid #ffffff;
+  margin-top: 25px;
+  padding-top: 10px;
 }
 
 @media screen and (max-width: 676px) {
@@ -760,32 +767,38 @@ footer a {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 0;
-    padding-top: 45px;
+    padding: 0;
+    margin-top: 30px;
   }
   .upper-footer ul {
-    margin-top: 0;
-    margin-bottom: 12px;
-    padding-top: 0;
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
   }
 
   .sub-img {
     padding-right: 0;
   }
 
+  .sub-h2 {
+    margin-top: 10px;
+  }
+
   .lower-footer {
     padding-left: 0;
-    margin-top: 25px;
     flex-direction: column;
     text-align: left;
   }
   .lower-footer p {
     text-align: left;
-    margin-bottom: 0;
   }
 
   .border {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 .artist-description {
@@ -862,7 +875,6 @@ footer a {
 .track-descr {
   margin-bottom: 0;
   margin-top: 0;
-  color: #E0E0E0;
 }
 
 .track-time {

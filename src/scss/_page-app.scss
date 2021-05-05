@@ -1,3 +1,7 @@
+.container-app {
+  grid-gap: 0;
+}
+
 .page-app {
   margin-bottom: 100px;
 }
@@ -14,7 +18,7 @@
 }
 
 .btn-red-app {
-  padding: 15px 35px;
+  padding: 15px 40px;
   border-color: $red;
   border-radius: 2rem;
   background-color: $red;
@@ -27,11 +31,11 @@
 
 .p-bottom {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 676px) {
-  .mobile-reverse {
+  .container-app {
     flex-direction: column-reverse;
     margin: 0;
   }

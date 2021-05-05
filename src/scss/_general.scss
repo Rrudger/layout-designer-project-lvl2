@@ -50,6 +50,12 @@ section {
   grid-column-gap: 50px;
 }
 
+.grid-2-columns-home {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  //grid-column-gap: 50px;
+}
+
 .grid-4-columns {
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, calc(25% - 50px)));
