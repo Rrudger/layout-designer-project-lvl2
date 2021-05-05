@@ -429,7 +429,7 @@ nav a {
   text-align: center;
 }
 
-.mar-t-30 {
+.p-descr {
   margin-top: 30px;
 }
 
@@ -442,7 +442,7 @@ nav a {
     margin-top: 50px;
   }
 
-  .p-mob-descr {
+  .p-descr {
     margin-top: 15px;
   }
 
