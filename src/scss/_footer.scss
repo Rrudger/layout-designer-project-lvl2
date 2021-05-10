@@ -2,6 +2,7 @@ footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
   width: 100%;
   flex: 0 0 auto;
+  font-size: 16px;
   @extend %flex-column;
   @extend %j-center;
 
@@ -10,41 +11,31 @@ footer {
   }
 }
 
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .upper-footer {
   width: 100%;
   margin-bottom: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px;
-
-  ul {
-    list-style: none;
-    text-align: left;
-    padding-left: 0;
-    margin: 0;
-    color: $grey;
-
-    p {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-    }
-
-    li {
-    font-size: 16px;
-  }
-  }
+}
 
   .subscribe {
+    text-align: start;
+    margin-top: 5px;
 
-    p {
-      margin-top: 0;
-      margin-bottom: 15px;
+    a {
+      margin-right: 20px;
     }
     }
 
   .sub-img {
-    margin-right: 20px;
+    text-align: center;
   }
 
   .footer-h2 {
@@ -61,13 +52,9 @@ footer {
     @extend %flex-row;
     @extend %j-start;
 
-    p {
+    a {
       margin-right: 15px;
       margin-top: 0;
-    }
-
-    ul {
-      color: $grey;
     }
   }
 
@@ -85,12 +72,7 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 0;
     padding: 0;
-    margin-top: 30px;
-
-    ul {
-      margin:0;
-      padding: 0;
-    }
+    margin-top: 35px;
   }
 
   .footer-h2 {
@@ -108,10 +90,12 @@ footer {
 
   .lower-footer {
     padding-left: 0;
+    margin-top: 30px;
     flex-direction: column;
     text-align: left;
 
-    p{
+    a{
+      margin-bottom: 15px;
       text-align: left;
     }
   }

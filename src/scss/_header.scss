@@ -48,8 +48,11 @@ header {
 
   nav a {
     text-decoration: none;
-    padding-right: 25px;
     color: $white;
+  }
+
+  li {
+    margin-right: 25px;
   }
 
   @media screen and (max-width: 750px) and (min-width: 676px) {

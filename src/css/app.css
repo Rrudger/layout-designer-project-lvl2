@@ -1,4 +1,4 @@
-.header-wrap, .header-input, footer, .order-form, .c-flex-column, section, main, body, .track-info, .popular-track, .lower-footer, .inputs, .horizontal-menu, header, .logo, .c-flex-row, .img-app, .pricing-value, .a-left-container, .descr-btn, .hf-container {
+.header-wrap, .header-input, footer, .order-form, .c-flex-column, section, main, body, .track-info, .popular-track, .lower-footer, .news-author, .inputs, .horizontal-menu, header, .logo, .c-flex-row, .pricing-value, .a-left-container, .descr-btn, .hf-container {
   display: flex;
 }
 
@@ -10,7 +10,7 @@
   justify-content: flex-start;
 }
 
-.track-info, .popular-track, .descr-btn, .img-app, .pricing-value, .order-form, .header-wrap, .logo, .c-flex-column, section, body {
+.track-info, .popular-track, .descr-btn, .news-author, .pricing-value, .order-form, .header-wrap, .logo, .c-flex-column, section, body {
   align-items: center;
 }
 
@@ -18,11 +18,11 @@
   align-items: flex-start;
 }
 
-footer, .img-app, .pricing-value, header, section {
+footer, .pricing-value, header, section {
   justify-content: center;
 }
 
-.track-info, .popular-track, .lower-footer, .inputs, .horizontal-menu, header, .logo, .c-flex-row {
+.track-info, .popular-track, .lower-footer, .news-author, .inputs, .horizontal-menu, header, .logo, .c-flex-row {
   flex-direction: row;
 }
 
@@ -30,7 +30,7 @@ footer, .order-form, .c-flex-column, section, main, body {
   flex-direction: column;
 }
 
-.header-wrap, .header-input, .track-info, .inputs, .hf-container, .c-flex-row, .popular-track, .descr-btn, .lower-footer, .img-app, .pricing-value, .order-form, .logo, .c-flex-column, section, body, .a-left-container, footer, header, .horizontal-menu, main {
+.header-wrap, .header-input, .track-info, .inputs, .hf-container, .c-flex-row, .popular-track, .descr-btn, .lower-footer, .news-author, .pricing-value, .order-form, .logo, .c-flex-column, section, body, .a-left-container, footer, header, .horizontal-menu, main {
   display: flex;
 }
 
@@ -42,7 +42,7 @@ footer, .order-form, .c-flex-column, section, main, body {
   justify-content: flex-start;
 }
 
-.track-info, .popular-track, .descr-btn, .img-app, .pricing-value, .order-form, .header-wrap, .logo, .c-flex-column, section, body {
+.track-info, .popular-track, .descr-btn, .news-author, .pricing-value, .order-form, .header-wrap, .logo, .c-flex-column, section, body {
   align-items: center;
 }
 
@@ -50,11 +50,11 @@ footer, .order-form, .c-flex-column, section, main, body {
   align-items: flex-start;
 }
 
-footer, .img-app, .pricing-value, header, section {
+footer, .pricing-value, header, section {
   justify-content: center;
 }
 
-.track-info, .popular-track, .lower-footer, .inputs, .horizontal-menu, header, .logo, .c-flex-row {
+.track-info, .popular-track, .lower-footer, .news-author, .inputs, .horizontal-menu, header, .logo, .c-flex-row {
   flex-direction: row;
 }
 
@@ -94,6 +94,7 @@ main {
 .grid-2-columns-home {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
+  grid-column-gap: 50px;
 }
 
 .grid-4-columns {
@@ -105,7 +106,9 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
   text-align: center;
   align-self: center;
   box-sizing: border-box;
@@ -227,12 +230,6 @@ body, .text-normal {
   }
 }
 @media screen and (max-width: 676px) {
-  .container {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-  }
-
   .item {
     width: 100%;
   }
@@ -245,7 +242,6 @@ body, .text-normal {
 
   img {
     max-width: 100%;
-    padding-right: 15px;
   }
 
   h1 {
@@ -266,7 +262,7 @@ body, .text-normal {
     font-size: 13px;
   }
 }
-.header-wrap, .header-input, .track-info, .inputs, .popular-track, .descr-btn, .lower-footer, .img-app, .pricing-value, .order-form, .a-left-container, footer, header, .horizontal-menu, body, main, section, .c-flex-column, .c-flex-row, .hf-container, .logo {
+.header-wrap, .header-input, .track-info, .inputs, .popular-track, .descr-btn, .lower-footer, .news-author, .pricing-value, .order-form, .a-left-container, footer, header, .horizontal-menu, body, main, section, .c-flex-column, .c-flex-row, .hf-container, .logo {
   display: flex;
 }
 
@@ -278,7 +274,7 @@ body, .text-normal {
   justify-content: flex-start;
 }
 
-.track-info, .popular-track, .descr-btn, .img-app, .pricing-value, .order-form, .header-wrap, body, section, .c-flex-column, .logo {
+.track-info, .popular-track, .descr-btn, .news-author, .pricing-value, .order-form, .header-wrap, body, section, .c-flex-column, .logo {
   align-items: center;
 }
 
@@ -286,11 +282,11 @@ body, .text-normal {
   align-items: flex-start;
 }
 
-footer, .img-app, .pricing-value, header, section {
+footer, .pricing-value, header, section {
   justify-content: center;
 }
 
-.track-info, .popular-track, .lower-footer, .inputs, .horizontal-menu, header, .c-flex-row, .logo {
+.track-info, .popular-track, .lower-footer, .news-author, .inputs, .horizontal-menu, header, .c-flex-row, .logo {
   flex-direction: row;
 }
 
@@ -333,8 +329,11 @@ header {
 
 nav a {
   text-decoration: none;
-  padding-right: 25px;
   color: #ffffff;
+}
+
+li {
+  margin-right: 25px;
 }
 
 @media screen and (max-width: 750px) and (min-width: 676px) {
@@ -517,9 +516,8 @@ nav a {
 .h3-pricing {
   font-size: 23px;
   font-weight: normal;
-  padding-bottom: 170px;
   margin-top: 25px;
-  margin-bottom: 0;
+  margin-bottom: 170px;
 }
 
 .btn-pricing {
@@ -561,6 +559,7 @@ nav a {
 .news-author img {
   width: 19px;
   height: 19px;
+  margin-right: 15px;
 }
 
 .autor {
@@ -613,6 +612,10 @@ nav a {
     margin-bottom: 10px;
   }
 
+  .news-author {
+    margin-bottom: 35px;
+  }
+
   .news-item {
     max-width: 100%;
     grid-template-columns: 1fr;
@@ -629,7 +632,7 @@ nav a {
 
   .grid-reverse {
     display: block;
-    margin-top: 70px;
+    margin-top: 65px;
   }
   .grid-reverse .news-body {
     margin: 0;
@@ -640,6 +643,9 @@ nav a {
   }
 }
 .container-app {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  grid-template-areas: "descr-app img-app";
   grid-gap: 0;
 }
 
@@ -648,12 +654,13 @@ nav a {
 }
 
 .description-app {
+  grid-area: descr-app;
   text-align: left;
   color: #cacaca;
 }
 
 .img-app {
-  align-self: center;
+  grid-area: img-app;
 }
 
 .btn-red-app {
@@ -674,14 +681,12 @@ nav a {
 }
 
 @media screen and (max-width: 676px) {
-  .container-app {
-    flex-direction: column-reverse;
-    margin: 0;
+  .mobile-app {
+    display: block;
   }
 
   .img-app {
     width: 100%;
-    margin-bottom: -20px;
   }
   .img-app img {
     width: 100%;
@@ -699,9 +704,16 @@ footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
   width: 100%;
   flex: 0 0 auto;
+  font-size: 16px;
 }
 footer a {
   color: #E0E0E0;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .upper-footer {
@@ -711,28 +723,17 @@ footer a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px;
 }
-.upper-footer ul {
-  list-style: none;
-  text-align: left;
-  padding-left: 0;
-  margin: 0;
-  color: #E0E0E0;
-}
-.upper-footer ul p {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-.upper-footer li {
-  font-size: 16px;
-}
 
-.subscribe p {
-  margin-top: 0;
-  margin-bottom: 15px;
+.subscribe {
+  text-align: start;
+  margin-top: 5px;
+}
+.subscribe a {
+  margin-right: 20px;
 }
 
 .sub-img {
-  margin-right: 20px;
+  text-align: center;
 }
 
 .footer-h2 {
@@ -747,12 +748,9 @@ footer a {
   margin-bottom: 50px;
   width: 100%;
 }
-.lower-footer p {
+.lower-footer a {
   margin-right: 15px;
   margin-top: 0;
-}
-.lower-footer ul {
-  color: #E0E0E0;
 }
 
 .border {
@@ -768,11 +766,7 @@ footer a {
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 0;
     padding: 0;
-    margin-top: 30px;
-  }
-  .upper-footer ul {
-    margin: 0;
-    padding: 0;
+    margin-top: 35px;
   }
 
   .footer-h2 {
@@ -790,10 +784,12 @@ footer a {
 
   .lower-footer {
     padding-left: 0;
+    margin-top: 30px;
     flex-direction: column;
     text-align: left;
   }
-  .lower-footer p {
+  .lower-footer a {
+    margin-bottom: 15px;
     text-align: left;
   }
 
@@ -857,10 +853,6 @@ footer a {
   .h1-artist {
     margin-top: 25px;
   }
-
-  .btn-img {
-    margin-right: 0;
-  }
 }
 .track-img {
   height: 55px;
@@ -891,8 +883,10 @@ footer a {
     margin-right: 0;
   }
 
-  .track-img {
-    margin-right: 0;
+  .popular-mobile-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 }
 .page-similar {

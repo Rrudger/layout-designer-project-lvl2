@@ -1,4 +1,7 @@
 .container-app {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  grid-template-areas: "descr-app img-app";
   grid-gap: 0;
 }
 
@@ -7,14 +10,13 @@
 }
 
 .description-app {
+  grid-area: descr-app;
   text-align: left;
   color: $dark-grey;
 }
 
 .img-app {
-  @extend %j-center;
-  @extend %a-center;
-  align-self: center;
+  grid-area: img-app;
 }
 
 .btn-red-app {
@@ -35,14 +37,12 @@
 }
 
 @media screen and (max-width: 676px) {
-  .container-app {
-    flex-direction: column-reverse;
-    margin: 0;
+  .mobile-app {
+    display: block;
   }
 
   .img-app {
     width: 100%;
-    margin-bottom: -20px;
 
     img {
       width: 100%;
