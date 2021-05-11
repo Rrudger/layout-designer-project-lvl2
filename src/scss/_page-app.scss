@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
   grid-template-areas: "descr-app img-app";
-  grid-gap: 0;
 }
 
 .page-app {
@@ -26,34 +25,12 @@
   background-color: $red;
 }
 
-.p-top {
-  margin-top: 10px;
-  margin-bottom: 15px;
-}
-
-.p-bottom {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
 @media screen and (max-width: 676px) {
   .mobile-app {
     display: block;
   }
 
-  .img-app {
-    width: 100%;
-
-    img {
-      width: 100%;
-    }
-  }
-
   .m-bot-30 {
     margin-top: 10px;
-  }
-
-  .app-h2 {
-    margin-bottom: 50px;
   }
 }

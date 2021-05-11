@@ -4,7 +4,6 @@ footer {
   flex: 0 0 auto;
   font-size: 16px;
   @extend %flex-column;
-  @extend %j-center;
 
   a {
     color: $grey;
@@ -15,6 +14,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: start;
+  padding-left: 0;
+
+  p {
+    margin: 0;
+  }
 }
 
 .upper-footer {
@@ -23,46 +27,46 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px;
+
+  li {
+      list-style: none;
+  }
+
 }
 
   .subscribe {
-    text-align: start;
-    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 
     a {
-      margin-right: 20px;
+      margin-right: 25px;
     }
     }
-
-  .sub-img {
-    text-align: center;
-  }
 
   .footer-h2 {
     font-size: 18px;
-    margin-top: 45px;
-    margin-bottom: 0;
+    line-height: inherit;
+    margin-top: 60px;
+    margin-bottom: 20px;
     text-align: start;
   }
 
   .lower-footer {
     margin-top: 2rem;
     margin-bottom: 50px;
-    width: 100%;
-    @extend %flex-row;
     @extend %j-start;
 
     a {
       margin-right: 15px;
-      margin-top: 0;
     }
   }
 
   .border {
     width: 100%;
     border-top: 1px solid $white;
-    margin-top: 25px;
-    padding-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   @media screen and (max-width: 676px){
@@ -71,8 +75,11 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 0;
-    padding: 0;
     margin-top: 35px;
+
+    ul {
+      margin: 0;
+    }
   }
 
   .footer-h2 {
@@ -80,19 +87,12 @@ footer {
     margin-bottom: 15px;
   }
 
-  .sub-img {
-    padding-right: 0;
-  }
-
   .sub-h2 {
     margin-top: 10px;
   }
 
   .lower-footer {
-    padding-left: 0;
-    margin-top: 30px;
     flex-direction: column;
-    text-align: left;
 
     a{
       margin-bottom: 15px;

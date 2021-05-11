@@ -12,8 +12,7 @@ header {
 }
 
 .header-container {
-  display: flex;
-  flex-direction: row;
+  @extend %j-between;
 }
 
   .small-header {
@@ -21,21 +20,18 @@ header {
   }
 
   .header-input {
-    font-family: Arial, sans-serif;
+    font: 13px Arial, sans-serif;
     background-color: $dark;
     color: #757575;
     border-radius: 15px;
     height: 1.5em;
-    align-self: center;
     border: 3px solid $dark;
-    padding: 10px 60px 10px 10px;
+    padding: 10px 65px 10px 5px;
     @extend %flex;
-    @extend %header-font;
   }
 
   .header-wrap {
     font-weight: bold;
-    @extend %flex;
     @extend %j-between;
     @extend %a-center;
   }
@@ -44,16 +40,11 @@ header {
     list-style: none;
     margin: 0 0 0 50px;
     @extend %flex-row;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: $white;
-  }
 
   li {
     margin-right: 25px;
   }
+}
 
   @media screen and (max-width: 750px) and (min-width: 676px) {
     .horizontal-menu {
@@ -62,16 +53,6 @@ header {
   }
 
   @media screen and (max-width: 676px){
-    header {
-      align-items: flex-start;
-      align-content: flex-start;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      margin: 0;
-      padding: 0;
-      top: 0;
-    }
-
     .header-container {
       flex-direction: column;
     }
@@ -80,13 +61,7 @@ header {
       font-size: 11px;
     }
 
-    .header-input {
-      font-size: 13px;
-      width: 100%;
-    }
-
     .header-wrap {
-      padding-top: 25px;
       flex-direction: column;
       align-items: flex-start;
     }
