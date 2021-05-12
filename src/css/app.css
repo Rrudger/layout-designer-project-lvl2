@@ -431,12 +431,12 @@ header {
 }
 
 .pricing-value {
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 
 .price {
   font-size: 64px;
-  line-height: 64px;
+  line-height: 45px;
   padding-top: 15px;
 }
 
@@ -453,7 +453,7 @@ header {
 
 .h3-pricing {
   font-size: 23px;
-  margin-bottom: 190px;
+  margin-bottom: 200px;
 }
 
 .btn-pricing {
@@ -471,7 +471,7 @@ header {
   }
 
   .pricing-value {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .h3-pricing {
@@ -616,14 +616,9 @@ footer a {
   list-style: none;
 }
 
-.subscribe {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
 .subscribe a {
   margin-right: 20px;
-  display: flex;
+  display: inline-flex;
 }
 
 .footer-h2 {
