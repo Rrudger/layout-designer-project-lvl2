@@ -29,18 +29,20 @@
 }
 
 .pricing-value {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   @extend %j-center;
   @extend %a-center;
 }
 
 .price {
   font-size: 64px;
+  line-height: 64px;
   padding-top: 15px;
 }
 
 .value {
   font-size: 32px;
+  line-height: 32px;
   padding-left: 12px;
 }
 
@@ -52,7 +54,7 @@
 
 .h3-pricing {
   font-size: 23px;
-  margin-bottom: 170px;
+  margin-bottom: 190px;
 }
 
 .btn-pricing {
@@ -70,7 +72,7 @@
   }
 
   .pricing-value {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .h3-pricing {
