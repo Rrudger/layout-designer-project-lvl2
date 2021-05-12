@@ -73,7 +73,6 @@ body {
   line-height: 1.5;
   color: #ffffff;
   background-color: #08020d;
-  overflow-x: hidden;
 }
 
 main {
@@ -108,8 +107,8 @@ main {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 20px;
   text-align: center;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -595,9 +594,7 @@ footer a {
 }
 
 .footer-list {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+  text-align: start;
   padding-left: 0;
 }
 .footer-list p {
@@ -617,11 +614,13 @@ footer a {
 
 .subscribe {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 .subscribe a {
+  display: flex;
   margin-right: 25px;
+}
+.subscribe a img {
+  align-self: center;
 }
 
 .footer-h2 {
