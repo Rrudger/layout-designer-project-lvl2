@@ -462,6 +462,10 @@ header {
   box-sizing: border-box;
 }
 
+.section-pricing-footer {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 676px) {
   .items {
     grid-template-columns: 1fr;
