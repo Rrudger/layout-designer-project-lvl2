@@ -614,13 +614,12 @@ footer a {
 
 .subscribe {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .subscribe a {
+  margin-right: 20px;
   display: flex;
-  margin-right: 25px;
-}
-.subscribe a img {
-  align-self: center;
 }
 
 .footer-h2 {
