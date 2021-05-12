@@ -107,7 +107,6 @@ main {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  text-align: center;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -151,10 +150,6 @@ a {
 h2 {
   margin-top: 100px;
   margin-bottom: 50px;
-}
-
-.align-left {
-  text-align: left;
 }
 
 .text-normal {
@@ -374,14 +369,16 @@ header {
 }
 
 .p-descr {
-  margin-top: 30px;
+  text-align: center;
 }
 
 .h1-descr {
+  text-align: center;
   margin: 0;
 }
 
 .h2-descr {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -413,6 +410,10 @@ header {
 
 .bg-premium {
   background-image: url("../images/subscribe_3.png");
+}
+
+.page-pricing {
+  text-align: center;
 }
 
 .items {
@@ -555,6 +556,7 @@ header {
 
 .page-app {
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .description-app {
@@ -758,6 +760,10 @@ footer a {
 }
 .page-similar {
   margin-bottom: 100px;
+}
+
+.similar-descr {
+  text-align: center;
 }
 
 @font-face {
