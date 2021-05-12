@@ -622,6 +622,7 @@ footer a {
 
 .subscribe {
   display: flex;
+  height: 30px;
 }
 .subscribe a {
   margin-right: 20px;
