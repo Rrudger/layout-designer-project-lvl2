@@ -64,7 +64,6 @@ section {
 
 .container {
   width:100%;
-  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -148,6 +147,12 @@ img {
   }
 
   @include desktop-fonts;
+
+@media screen and (min-width: 1240px) {
+  .container {
+    width: 1240px;
+}
+}
 
 @media screen and (max-width: 676px) {
 
