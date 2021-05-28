@@ -10,11 +10,11 @@
   justify-content: flex-start;
 }
 
-.track-info, .descr-btn, .news-author, .pricing-value, .header-wrap, .logo, .c-flex-column, section, body {
+.track-info, .descr-btn, .news-author, .header-wrap, .logo, .c-flex-column, section, body {
   align-items: center;
 }
 
-.a-left-container {
+.a-left-container, .pricing-value {
   align-items: flex-start;
 }
 
@@ -30,7 +30,7 @@ footer, .order-form, .c-flex-column, section, main, body {
   flex-direction: column;
 }
 
-.header-input, .track-info, .inputs, .header-wrap, .header-container, .c-flex-row, .descr-btn, .lower-footer, .news-author, .pricing-value, .logo, .c-flex-column, section, body, .a-left-container, header, .popular-track, .horizontal-menu, footer, .order-form, main {
+.header-input, .track-info, .inputs, .header-wrap, .header-container, .c-flex-row, .descr-btn, .lower-footer, .news-author, .logo, .c-flex-column, section, body, .a-left-container, .pricing-value, header, .popular-track, .horizontal-menu, footer, .order-form, main {
   display: flex;
 }
 
@@ -42,11 +42,11 @@ footer, .order-form, .c-flex-column, section, main, body {
   justify-content: flex-start;
 }
 
-.track-info, .descr-btn, .news-author, .pricing-value, .header-wrap, .logo, .c-flex-column, section, body {
+.track-info, .descr-btn, .news-author, .header-wrap, .logo, .c-flex-column, section, body {
   align-items: center;
 }
 
-.a-left-container {
+.a-left-container, .pricing-value {
   align-items: flex-start;
 }
 
@@ -245,7 +245,7 @@ body, .text-normal {
     font-size: 13px;
   }
 }
-.header-input, .track-info, .inputs, .header-wrap, .header-container, .descr-btn, .lower-footer, .news-author, .pricing-value, .a-left-container, header, .popular-track, .horizontal-menu, footer, .order-form, body, main, section, .c-flex-column, .c-flex-row, .logo {
+.header-input, .track-info, .inputs, .header-wrap, .header-container, .descr-btn, .lower-footer, .news-author, .a-left-container, .pricing-value, header, .popular-track, .horizontal-menu, footer, .order-form, body, main, section, .c-flex-column, .c-flex-row, .logo {
   display: flex;
 }
 
@@ -257,11 +257,11 @@ body, .text-normal {
   justify-content: flex-start;
 }
 
-.track-info, .descr-btn, .news-author, .pricing-value, .header-wrap, body, section, .c-flex-column, .logo {
+.track-info, .descr-btn, .news-author, .header-wrap, body, section, .c-flex-column, .logo {
   align-items: center;
 }
 
-.a-left-container {
+.a-left-container, .pricing-value {
   align-items: flex-start;
 }
 
@@ -429,7 +429,7 @@ header {
 }
 
 .items {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 47px;
@@ -443,24 +443,23 @@ header {
 }
 
 .pricing-value {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .price {
   font-size: 64px;
-  line-height: 45px;
-  padding-top: 15px;
+  line-height: 64px;
 }
 
 .value {
   font-size: 32px;
-  line-height: 32px;
-  padding-left: 12px;
+  line-height: 48px;
+  margin-left: 16px;
 }
 
 .pricing-footer {
-  margin-top: 65px;
-  margin-bottom: 55px;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .h2-pricing {

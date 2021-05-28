@@ -16,7 +16,7 @@
 }
 
 .items {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 47px;
@@ -30,26 +30,25 @@
 }
 
 .pricing-value {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   @extend %j-center;
-  @extend %a-center;
+  @extend %a-start;
 }
 
 .price {
   font-size: 64px;
-  line-height: 45px;
-  padding-top: 15px;
+  line-height: 64px;
 }
 
 .value {
   font-size: 32px;
-  line-height: 32px;
-  padding-left: 12px;
+  line-height: 48px;
+  margin-left: 16px;
 }
 
 .pricing-footer {
-  margin-top: 65px;
-  margin-bottom: 55px;
+  margin-top: 64px;
+  margin-bottom: 64px;
   @extend %small-font;
 }
 
