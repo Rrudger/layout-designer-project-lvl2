@@ -29,13 +29,9 @@
 }
 
 @media screen and (max-width: 676px) {
-  .mobile-app {
-    //display: block;
-  }
-
   .container-app {
     grid-template-columns: 1fr;
-    grid-gap: 0;
+    grid-gap: 20px;
     grid-template-areas: none;
   }
 
