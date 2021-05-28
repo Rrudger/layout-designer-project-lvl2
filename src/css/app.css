@@ -432,7 +432,7 @@ header {
   margin-bottom: 45px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 50px;
+  grid-gap: 47px;
 }
 
 .pricing-item {
@@ -461,6 +461,10 @@ header {
 .pricing-footer {
   margin-top: 65px;
   margin-bottom: 55px;
+}
+
+.h2-pricing {
+  margin-bottom: 48px;
 }
 
 .h3-pricing {
@@ -605,16 +609,12 @@ header {
 @media screen and (max-width: 676px) {
   .container-app {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 0;
     grid-template-areas: none;
   }
 
   .img-app {
     grid-area: initial;
-    margin-top: 20px;
-  }
-  .img-app img {
-    height: 100%;
   }
 
   .description-app {
@@ -623,14 +623,6 @@ header {
 
   .m-bot-30 {
     margin-top: 10px;
-  }
-
-  .mt-0 {
-    margin-top: 0;
-  }
-
-  .h2-app {
-    margin-bottom: 30px;
   }
 }
 footer {

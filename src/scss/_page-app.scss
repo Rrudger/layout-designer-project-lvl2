@@ -31,17 +31,12 @@
 @media screen and (max-width: 676px) {
   .container-app {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 0;
     grid-template-areas: none;
   }
 
   .img-app {
     grid-area: initial;
-    margin-top: 20px;
-
-    img {
-    height: 100%;
-  }
   }
 
   .description-app {
@@ -50,13 +45,5 @@
 
   .m-bot-30 {
     margin-top: 10px;
-  }
-
-  .mt-0 {
-    margin-top: 0;
-  }
-
-  .h2-app {
-    margin-bottom: 30px;
   }
 }
