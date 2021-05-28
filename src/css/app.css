@@ -612,6 +612,9 @@ header {
   .img-app {
     grid-area: initial;
   }
+  .img-app img {
+    height: 100%;
+  }
 
   .description-app {
     grid-area: initial;

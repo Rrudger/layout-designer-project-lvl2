@@ -37,6 +37,10 @@
 
   .img-app {
     grid-area: initial;
+
+    img {
+    height: 100%;
+  }
   }
 
   .description-app {
