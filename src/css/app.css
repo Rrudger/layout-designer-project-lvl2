@@ -544,6 +544,10 @@ header {
   padding: 16px 30px 16px 30px;
 }
 
+.h2-news {
+  text-align: center;
+}
+
 .h3-news {
   font-size: 30px;
   font-weight: normal;
@@ -570,8 +574,9 @@ header {
 }
 .container-app {
   display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, minmax(260px, 2fr));
   grid-template-areas: "descr-app img-app";
+  grid-gap: 40px;
 }
 
 .page-app {
