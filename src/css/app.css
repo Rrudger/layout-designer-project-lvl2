@@ -611,6 +611,7 @@ header {
 
   .img-app {
     grid-area: initial;
+    margin-top: 20px;
   }
   .img-app img {
     height: 100%;
