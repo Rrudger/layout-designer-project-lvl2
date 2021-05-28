@@ -30,7 +30,21 @@
 
 @media screen and (max-width: 676px) {
   .mobile-app {
-    display: block;
+    //display: block;
+  }
+
+  .container-app {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    grid-template-areas: none;
+  }
+
+  .img-app {
+    grid-area: initial;
+  }
+
+  .description-app {
+    grid-area: initial;
   }
 
   .m-bot-30 {
