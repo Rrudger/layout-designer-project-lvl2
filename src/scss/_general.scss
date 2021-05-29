@@ -7,10 +7,12 @@ body {
 
 body {
   margin: 0;
-	padding: 0;
-  font-family: "Roboto", "Roboto Slab";
+  padding: 0;
   color: $white;
+
+  font-family: "Roboto", "Roboto Slab", sans-serif;
   line-height: 1.5;
+
   background-color: $bg-color;
 
   @extend %normal-font;
@@ -20,8 +22,9 @@ body {
 
 main {
   position: relative;
-  width: 100%;
   flex: 1 0 auto;
+
+  width: 100%;
   margin-top: 0;
   padding-top: 0;
 
@@ -65,8 +68,8 @@ section {
 }
 
 .container {
-  width:100%;
   box-sizing: border-box;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -81,9 +84,11 @@ a {
   padding: 20px 30px;
   border: 1px solid $white;
   border-radius: 5px;
+
   color: $white;
-  text-decoration: none;
   font-size: 12.8px;
+  text-decoration: none;
+
   cursor: pointer;
 }
 
@@ -167,8 +172,9 @@ img {
 
   .grid-m-2-columns {
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(2, minmax(100px, calc(50% - 50px)));
+    
+    width: 100%;
   }
 
   @include mobile-fonts;

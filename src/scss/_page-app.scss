@@ -24,21 +24,21 @@
 
 .btn-red-app {
   padding: 16px 40px;
+
   border-color: $red;
-  border-radius: 2rem;
   background-color: $red;
+  border-radius: 2rem;
 }
 
 @media screen and (max-width: 676px) {
-
   .h2-app {
     margin-bottom: 3rem;
   }
 
   .container-app {
     grid-gap: 0;
-    grid-template-columns: 1fr;
     grid-template-areas: none;
+    grid-template-columns: 1fr;
   }
 
   .img-app {

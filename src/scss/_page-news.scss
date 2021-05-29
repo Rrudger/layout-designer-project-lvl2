@@ -17,6 +17,7 @@
 
 .autor {
   margin-right: 15px;
+
   color: $orange;
 
   @extend %small-font;
@@ -24,6 +25,7 @@
 
 .data {
   color: $dark-grey;
+
   @extend %small-font;
 }
 
@@ -49,8 +51,10 @@
 }
 
 .btn-news {
-  color: $dark-grey;
   padding: 16px 30px 16px 30px;
+
+  color: $dark-grey;
+
   border-color: $dark-grey;
 }
 
@@ -60,6 +64,7 @@
 
 .h3-news {
   margin-top: 0;
+  
   font-weight: normal;
   font-size: 30px;
 }

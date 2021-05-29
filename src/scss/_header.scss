@@ -5,7 +5,9 @@ header {
   top: 25px;
 
   z-index: 9999;
+
   width: 100%;
+
   background: transparent;
 
   @extend %small-header;
@@ -24,13 +26,13 @@ header {
 .header-input {
   font: 13px Arial, sans-serif;
 
-  background-color: $dark;
-  color: #757575;
   height: 1.5em;
-
+  color: #757575;
+  background-color: $dark;
   padding: 10px 65px 10px 5px;
-  border-radius: 15px;
+
   border: 3px solid $dark;
+  border-radius: 15px;
 
   @extend %flex;
 }
@@ -44,6 +46,7 @@ header {
 
 .horizontal-menu {
   margin: 0 0 0 50px;
+
   list-style: none;
 
   @extend %flex-row;
@@ -75,10 +78,10 @@ header {
 
   .horizontal-menu {
     flex-direction: column;
-    text-align: left;
-    margin-left: 0;
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-left: 0;
     padding-left: 0;
+    text-align: left;
   }
 }

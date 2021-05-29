@@ -1,6 +1,7 @@
 .artist-description {
   padding-top: 200px;
   padding-bottom: 200px;
+
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
@@ -40,8 +41,8 @@
 
 .h1-artist {
   width: 100%;
-  margin-bottom: 0;
   margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .p-artist {
@@ -52,7 +53,7 @@
 @media screen and (max-width: 600px) {
   .buttons {
     grid-gap: 0;
-    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-bottom: 0;
   }
 

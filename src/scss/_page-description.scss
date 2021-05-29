@@ -1,8 +1,10 @@
 .page-description {
   background-image: url("../images/banner.png");
-  background-position: center;
+
   padding-top: 200px;
   padding-bottom: 200px;
+  background-position: center;
+
   background-size: cover;
 }
 
@@ -17,17 +19,17 @@
   flex-grow: 1;
   max-width: 270px;
   min-height: 50px;
-  border-radius: 3px;
   box-sizing: border-box;
+
+  border-radius: 3px;
   margin-bottom: 1.5rem;
   padding: 0 0 0 20px;
+
   background: transparent;
   border: 2px solid $dark-grey;
 }
 
 .sqr-input::placeholder {
-  text-weight: bold;
-
   color: $white;
 }
 
@@ -37,6 +39,7 @@
 
 .btn-green {
   width: 100%;
+
   background-color: $green;
   border: 1px solid $green;
 }
@@ -54,12 +57,14 @@
 
 .h1-descr {
   margin: 0;
+
   text-align: center;
 }
 
 .h2-descr {
   margin-top: 0;
   margin-bottom: 30px;
+  
   text-align: center;
 }
 

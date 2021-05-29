@@ -16,16 +16,17 @@
 
 .items {
   display: grid;
-  margin-bottom: 40px;
   grid-gap: 47px;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-bottom: 40px;
 }
 
 .pricing-item {
   padding: 0 1.5rem;
+
   background-position: center;
-  border-radius: 1rem;
   background-size: cover;
+  border-radius: 1rem;
 }
 
 .pricing-value {
@@ -42,6 +43,7 @@
 
 .value {
   margin-left: 16px;
+
   font-size: 32px;
   line-height: 48px;
 }
@@ -59,6 +61,7 @@
 
 .h3-pricing {
   margin-bottom: 200px;
+
   font-weight: normal;
   font-size: 24px;
 }
@@ -66,6 +69,7 @@
 .btn-pricing {
   box-sizing: border-box;
   width: 100%;
+
   font-size: 16px;
 }
 
@@ -86,6 +90,7 @@
 
   .h3-pricing {
     margin-top: 15px;
+    
     font-size: 16px;
   }
 }
