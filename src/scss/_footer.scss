@@ -86,6 +86,8 @@ footer {
   }
 
   .lower-footer {
+    display: flex;
+    flex-direction: column;
 
     a {
       margin-bottom: 16px;

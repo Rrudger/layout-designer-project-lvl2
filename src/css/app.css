@@ -358,7 +358,7 @@ header {
   margin-bottom: 1.5rem;
   padding: 0 0 0 20px;
   background: transparent;
-  border: 2px solid #cacaca;
+  border: 3px solid #cacaca;
 }
 
 .sqr-input::placeholder {
@@ -702,6 +702,10 @@ footer a {
     margin-top: 30px;
   }
 
+  .lower-footer {
+    display: flex;
+    flex-direction: column;
+  }
   .lower-footer a {
     margin-bottom: 16px;
     text-align: left;
