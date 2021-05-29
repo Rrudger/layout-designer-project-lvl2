@@ -289,8 +289,8 @@ header {
 .header-input {
   height: 1.5em;
   padding: 10px 65px 10px 5px;
-  background-color: #3c3b3d;
   color: #757575;
+  background-color: #3c3b3d;
   font: 13px Arial, sans-serif;
   border: 3px solid #3c3b3d;
   border-radius: 15px;
