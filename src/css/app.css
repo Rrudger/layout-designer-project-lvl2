@@ -689,7 +689,8 @@ footer a {
     display: flex;
     flex-direction: column;
     grid-gap: 0;
-    margin-top: 30px;
+    margin-top: 2rem;
+    margin-bottom: 70px;
   }
   .upper-footer ul {
     margin: 0;
@@ -703,7 +704,7 @@ footer a {
     flex-direction: column;
   }
   .lower-footer a {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     text-align: left;
   }
 }

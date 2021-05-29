@@ -73,7 +73,8 @@ footer {
     display: flex;
     flex-direction: column;
     grid-gap: 0;
-    margin-top: 30px;
+    margin-top: 2rem;
+    margin-bottom: 70px;
 
     ul {
       margin: 0;
@@ -92,7 +93,7 @@ footer {
     flex-direction: column;
 
     a{
-      margin-bottom: 15px;
+      margin-bottom: 16px;
       text-align: left;
     }
   }
