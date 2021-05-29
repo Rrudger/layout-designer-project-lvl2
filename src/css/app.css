@@ -119,10 +119,10 @@ a {
 .btn {
   display: inline-block;
   padding: 20px 30px;
-  border: 1px solid #fff;
   color: #fff;
-  border-radius: 5px;
+  border: 1px solid #fff;
   font-size: 12.8px;
+  border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -288,10 +288,10 @@ header {
 
 .header-input {
   height: 1.5em;
-  font: 13px Arial, sans-serif;
-  color: #757575;
   padding: 10px 65px 10px 5px;
   background-color: #3c3b3d;
+  color: #757575;
+  font: 13px Arial, sans-serif;
   border: 3px solid #3c3b3d;
   border-radius: 15px;
 }
@@ -356,9 +356,9 @@ header {
   min-height: 50px;
   margin-bottom: 1.5rem;
   padding: 0 0 0 20px;
-  border-radius: 3px;
   background: transparent;
   border: 2px solid #cacaca;
+  border-radius: 3px;
 }
 
 .sqr-input::placeholder {
