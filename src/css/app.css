@@ -617,6 +617,8 @@ header {
 
   .img-app {
     grid-area: initial;
+    display: flex;
+    justify-content: center;
   }
 
   .description-app {
