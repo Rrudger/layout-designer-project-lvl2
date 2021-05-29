@@ -636,6 +636,7 @@ footer a {
 .footer-list {
   text-align: start;
   padding-left: 0;
+  margin-bottom: 0;
 }
 .footer-list p {
   margin: 0;
@@ -643,7 +644,7 @@ footer a {
 
 .upper-footer {
   width: 100%;
-  margin-bottom: 55px;
+  margin-bottom: 73px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px;
@@ -680,7 +681,7 @@ footer a {
 
 .border {
   width: 100%;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #E0E0E0;
 }
 
 @media screen and (max-width: 676px) {
