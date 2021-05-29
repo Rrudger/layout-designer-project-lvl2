@@ -1,10 +1,10 @@
 .page-description {
-  background-image: url("../images/banner.png");
-
   padding-top: 200px;
   padding-bottom: 200px;
-  background-position: center;
 
+  background-image: url("../images/banner.png");
+
+  background-position: center;
   background-size: cover;
 }
 
@@ -17,13 +17,13 @@
 
 .sqr-input {
   flex-grow: 1;
+  box-sizing: border-box;
   max-width: 270px;
   min-height: 50px;
-  box-sizing: border-box;
 
-  border-radius: 3px;
   margin-bottom: 1.5rem;
   padding: 0 0 0 20px;
+  border-radius: 3px;
 
   background: transparent;
   border: 2px solid $dark-grey;
@@ -64,7 +64,7 @@
 .h2-descr {
   margin-top: 0;
   margin-bottom: 30px;
-  
+
   text-align: center;
 }
 

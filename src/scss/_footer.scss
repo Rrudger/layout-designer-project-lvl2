@@ -26,9 +26,9 @@ footer {
 
 .upper-footer {
   display: grid;
-  width: 100%;
   grid-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
   margin-bottom: 75px;
 
   li {
@@ -41,8 +41,8 @@ footer {
 
   a {
     display: flex;
-    height: 25px;
     align-items: center;
+    height: 25px;
     margin-right: 25px;
   }
 }
@@ -50,6 +50,7 @@ footer {
 .footer-h2 {
   margin-top: 60px;
   margin-bottom: 16px;
+  
   font-size: 18px;
 
   line-height: inherit;

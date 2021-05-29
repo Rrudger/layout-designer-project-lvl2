@@ -120,8 +120,8 @@ a {
   display: inline-block;
   padding: 20px 30px;
   border: 1px solid #fff;
-  border-radius: 5px;
   color: #fff;
+  border-radius: 5px;
   font-size: 12.8px;
   text-decoration: none;
   cursor: pointer;
@@ -287,11 +287,11 @@ header {
 }
 
 .header-input {
-  font: 13px Arial, sans-serif;
   height: 1.5em;
+  font: 13px Arial, sans-serif;
   color: #757575;
-  background-color: #3c3b3d;
   padding: 10px 65px 10px 5px;
+  background-color: #3c3b3d;
   border: 3px solid #3c3b3d;
   border-radius: 15px;
 }
@@ -337,9 +337,9 @@ header {
   }
 }
 .page-description {
-  background-image: url("../images/banner.png");
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
 }
@@ -351,12 +351,12 @@ header {
 
 .sqr-input {
   flex-grow: 1;
+  box-sizing: border-box;
   max-width: 270px;
   min-height: 50px;
-  box-sizing: border-box;
-  border-radius: 3px;
   margin-bottom: 1.5rem;
   padding: 0 0 0 20px;
+  border-radius: 3px;
   background: transparent;
   border: 2px solid #cacaca;
 }
@@ -594,8 +594,8 @@ header {
 
 .btn-red-app {
   padding: 16px 40px;
-  border-color: #95390c;
   background-color: #95390c;
+  border-color: #95390c;
   border-radius: 2rem;
 }
 
@@ -645,9 +645,9 @@ footer a {
 
 .upper-footer {
   display: grid;
-  width: 100%;
   grid-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
   margin-bottom: 75px;
 }
 .upper-footer li {
@@ -659,8 +659,8 @@ footer a {
 }
 .subscribe a {
   display: flex;
-  height: 25px;
   align-items: center;
+  height: 25px;
   margin-right: 25px;
 }
 
@@ -805,8 +805,8 @@ footer a {
 }
 
 @font-face {
-  font-family: "Roboto";
   font-weight: 400;
+  font-family: "Roboto";
   font-style: normal;
   src: local("Roboto"), url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2");
 }

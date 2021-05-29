@@ -8,6 +8,7 @@ body {
 body {
   margin: 0;
   padding: 0;
+
   color: $white;
 
   font-family: "Roboto", "Roboto Slab", sans-serif;
@@ -22,6 +23,7 @@ body {
 
 main {
   position: relative;
+
   flex: 1 0 auto;
 
   width: 100%;
@@ -82,10 +84,11 @@ a {
 .btn {
   display: inline-block;
   padding: 20px 30px;
+
   border: 1px solid $white;
+  color: $white;
   border-radius: 5px;
 
-  color: $white;
   font-size: 12.8px;
   text-decoration: none;
 
@@ -173,7 +176,7 @@ img {
   .grid-m-2-columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, calc(50% - 50px)));
-    
+
     width: 100%;
   }
 
