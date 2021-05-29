@@ -358,7 +358,7 @@ header {
   margin-bottom: 1.5rem;
   padding: 0 0 0 20px;
   background: transparent;
-  border: 3px solid #cacaca;
+  border: 2px solid #cacaca;
 }
 
 .sqr-input::placeholder {
