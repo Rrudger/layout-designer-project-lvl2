@@ -1,32 +1,33 @@
 .page-description {
   background-image: url("../images/banner.png");
   background-position: center;
-  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-size: cover;
 }
 
 .order-form {
   max-width: 570px;
   margin: 0 auto;
+
   @extend %flex-column;
 }
 
 .sqr-input {
-  border-radius: 0;
+  flex-grow: 1;
   max-width: 270px;
   min-height: 50px;
-  flex-grow: 1;
+  border-radius: 0;
   box-sizing: border-box;
-  padding: 0 0 0 20px;
   margin-bottom: 1.5rem;
-  border: 2px solid $dark-grey;
-  border-radius: 3px;
+  padding: 0 0 0 20px;
   background: transparent;
+  border: 2px solid $dark-grey;
 }
 
 .sqr-input::placeholder {
   text-weight: bold;
+
   color: $white;
 }
 
@@ -35,13 +36,15 @@
 }
 
 .btn-green {
-  border: 1px solid $green;
-  background-color: $green;
   width: 100%;
+  background-color: $green;
+  border: 1px solid $green;
 }
 
 .btn-green-wrap {
+
   width: 100%;
+
   text-align: center;
 }
 
@@ -50,19 +53,19 @@
 }
 
 .h1-descr {
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 .h2-descr {
-  text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 @media screen and (max-width: 676px) {
   .h1-descr {
-    margin-top:  50px;
+    margin-top: 50px;
   }
 
   .h2-descr {

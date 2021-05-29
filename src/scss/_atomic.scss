@@ -1,45 +1,51 @@
-
-
 %flex {
   display: flex;
 }
 
 %j-between {
   justify-content: space-between;
+
   @extend %flex;
 }
 
 %j-around {
   justify-content: space-around;
+
   @extend %flex;
 }
 
 %j-start {
   justify-content: flex-start;
+
   @extend %flex;
 }
 
 %a-center {
   align-items: center;
+
   @extend %flex;
 }
 
 %a-start {
   align-items: flex-start;
+
   @extend %flex;
 }
 
 %j-center {
   justify-content: center;
+
   @extend %flex;
 }
 
 %flex-row {
   flex-direction: row;
+
   @extend %flex;
 }
 
 %flex-column {
   flex-direction: column;
+  
   @extend %flex;
 }

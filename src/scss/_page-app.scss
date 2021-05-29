@@ -1,19 +1,21 @@
 .container-app {
   display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 2fr));
-  grid-template-areas: "descr-app img-app";
   grid-gap: 40px;
+  grid-template-areas: "descr-app img-app";
+  grid-template-columns: repeat(2, minmax(260px, 2fr));
 }
 
 .page-app {
   margin-bottom: 100px;
+
   text-align: center;
 }
 
 .description-app {
   grid-area: descr-app;
-  text-align: left;
+
   color: $dark-grey;
+  text-align: left;
 }
 
 .img-app {
@@ -21,7 +23,6 @@
 }
 
 .btn-red-app {
-  font-size: 12.8px;
   padding: 16px 40px;
   border-color: $red;
   border-radius: 2rem;
@@ -35,14 +36,14 @@
   }
 
   .container-app {
-    grid-template-columns: 1fr;
     grid-gap: 0;
+    grid-template-columns: 1fr;
     grid-template-areas: none;
   }
 
   .img-app {
-    grid-area: initial;
     display: flex;
+    grid-area: initial;
     justify-content: center;
   }
 

@@ -1,8 +1,9 @@
 footer {
-  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-  width: 100%;
   flex: 0 0 auto;
+  width: 100%;
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
   font-size: 16px;
+
   @extend %flex-column;
 
   a {
@@ -11,9 +12,9 @@ footer {
 }
 
 .footer-list {
-  text-align: start;
-  padding-left: 0;
   margin-bottom: 0;
+  padding-left: 0;
+  text-align: start;
 
   p {
     margin: 0;
@@ -22,53 +23,52 @@ footer {
 
 .upper-footer {
   width: 100%;
-  margin-bottom: 75px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 75px;
   grid-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 
   li {
-      list-style: none;
+    list-style: none;
   }
-
 }
 
-  .subscribe {
+.subscribe {
+  display: flex;
+
+  a {
+    height: 25px;
     display: flex;
-
-    a {
-      height: 25px;
-      margin-right: 25px;
-      display: flex;
-      align-items: center;
-    }
-    }
-
-  .footer-h2 {
-    font-size: 18px;
-    line-height: inherit;
-    margin-top: 60px;
-    margin-bottom: 16px;
-    text-align: start;
+    margin-right: 25px;
+    align-items: center;
   }
+}
 
-  .lower-footer {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    @extend %j-start;
+.footer-h2 {
+  font-size: 18px;
+  margin-top: 60px;
+  margin-bottom: 16px;
+  line-height: inherit;
+  text-align: start;
+}
 
-    a {
-      margin-right: 15px;
-    }
+.lower-footer {
+  margin-top: 40px;
+  margin-bottom: 50px;
+
+  @extend %j-start;
+
+  a {
+    margin-right: 15px;
   }
+}
 
-  .border {
-    width: 100%;
-    border-top: 1px solid $grey;
-  }
+.border {
+  width: 100%;
+  border-top: 1px solid $grey;
+}
 
-  @media screen and (max-width: 676px){
-
+@media screen and (max-width: 676px){
   .upper-footer {
     display: flex;
     flex-direction: column;
@@ -81,21 +81,15 @@ footer {
     }
   }
 
-  .footer-list {
-
-  }
-
   .footer-h2 {
     margin-top: 30px;
   }
 
   .lower-footer {
-    flex-direction: column;
 
-    a{
+    a {
       margin-bottom: 16px;
       text-align: left;
     }
   }
-
-  }
+}

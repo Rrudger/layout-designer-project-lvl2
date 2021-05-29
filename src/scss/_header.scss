@@ -1,77 +1,84 @@
 @import "_variables", "_atomic";
 
 header {
-    position: absolute;
-    background: transparent;
-    width: 100%;
-    z-index: 9999;
-    top: 25px;
-    @extend %small-header;
-    @extend %flex-row;
-    @extend %j-center;
+  position: absolute;
+  top: 25px;
+
+  z-index: 9999;
+  width: 100%;
+  background: transparent;
+
+  @extend %small-header;
+  @extend %flex-row;
+  @extend %j-center;
 }
 
 .header-container {
   @extend %j-between;
 }
 
-  .small-header {
-    @extend %small-header;
-  }
+.small-header {
+  @extend %small-header;
+}
 
-  .header-input {
-    font: 13px Arial, sans-serif;
-    background-color: $dark;
-    color: #757575;
-    border-radius: 15px;
-    height: 1.5em;
-    border: 3px solid $dark;
-    padding: 10px 65px 10px 5px;
-    @extend %flex;
-  }
+.header-input {
+  font: 13px Arial, sans-serif;
 
-  .header-wrap {
-    font-weight: bold;
-    @extend %j-between;
-    @extend %a-center;
-  }
+  background-color: $dark;
+  color: #757575;
+  height: 1.5em;
 
-  .horizontal-menu {
-    list-style: none;
-    margin: 0 0 0 50px;
-    @extend %flex-row;
+  padding: 10px 65px 10px 5px;
+  border-radius: 15px;
+  border: 3px solid $dark;
+
+  @extend %flex;
+}
+
+.header-wrap {
+  font-weight: bold;
+
+  @extend %j-between;
+  @extend %a-center;
+}
+
+.horizontal-menu {
+  margin: 0 0 0 50px;
+  list-style: none;
+
+  @extend %flex-row;
 
   li {
     margin-right: 25px;
   }
 }
 
-  @media screen and (max-width: 750px) and (min-width: 676px) {
-    .horizontal-menu {
-      margin: 0;
-    }
+@media screen and (max-width: 750px) and (min-width: 676px) {
+  .horizontal-menu {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 676px){
+  .header-container {
+    flex-direction: column;
   }
 
-  @media screen and (max-width: 676px){
-    .header-container {
-      flex-direction: column;
-    }
-
-    .small-header {
-      font-size: 11px;
-    }
-
-    .header-wrap {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .horizontal-menu {
-      text-align: left;
-      flex-direction: column;
-      margin-left: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      padding-left: 0;
-    }
+  .small-header {
+    font-size: 11px;
   }
+
+  .header-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .horizontal-menu {
+    flex-direction: column;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 0;
+  }
+}

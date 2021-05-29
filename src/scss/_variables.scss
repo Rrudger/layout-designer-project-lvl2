@@ -1,12 +1,12 @@
 $dark-grey: #cacaca;
-$grey: #E0E0E0;
+$grey: #e0e0e0;
 $bg-color: #08020d;
-$dark: #3C3B3D;
-$green: #34C176;
-$orange: #F89202;
-$purple: #5328A1;
-$red: #95390C;
-$white: #ffffff;
+$dark: #3c3b3d;
+$green: #34c176;
+$orange: #f89202;
+$purple: #5328a1;
+$red: #95390c;
+$white: #fff;
 
 @mixin desktop-fonts {
   h1 {
@@ -19,7 +19,7 @@ $white: #ffffff;
     line-height: 57px;
   }
 
-  p{
+  p {
     font-size: 16px;
   }
 
@@ -46,7 +46,6 @@ $white: #ffffff;
     font-size: 18px;
     line-height: 27px;
   }
-
 
   %normal-font {
     font-size: 18px;

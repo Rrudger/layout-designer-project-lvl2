@@ -1,16 +1,18 @@
 @import "_atomic";
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   margin: 0;
 	padding: 0;
-  font-family: "Roboto";
-  line-height: 1.5;
+  font-family: "Roboto", "Roboto Slab";
   color: $white;
+  line-height: 1.5;
   background-color: $bg-color;
+
   @extend %normal-font;
   @extend %a-center;
   @extend %flex-column;
@@ -19,9 +21,10 @@ body {
 main {
   position: relative;
   width: 100%;
-  padding-top: 0;
-  margin-top: 0;
   flex: 1 0 auto;
+  margin-top: 0;
+  padding-top: 0;
+
   @extend %flex-column;
 }
 
@@ -30,7 +33,6 @@ section {
   @extend %j-center;
   @extend %a-center;
 }
-
 
 .c-flex-column {
   @extend %flex-column;
@@ -44,29 +46,29 @@ section {
 
 .grid-2-columns {
   display: grid;
-  grid-template-columns: repeat(2, minmax(260px, calc(50% - 50px)));
   grid-row-gap: 25px;
   grid-column-gap: 50px;
+  grid-template-columns: repeat(2, minmax(260px, calc(50% - 50px)));
 }
 
 .grid-2-columns-home {
   display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 1fr));
   grid-column-gap: 50px;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
 }
 
 .grid-4-columns {
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, calc(25% - 50px)));
   grid-row-gap: 25px;
   grid-column-gap: 50px;
+  grid-template-columns: repeat(4, minmax(100px, calc(25% - 50px)));
 }
 
 .container {
   width:100%;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
 a {
@@ -77,10 +79,10 @@ a {
 .btn {
   display: inline-block;
   padding: 20px 30px;
-  border-radius: 5px;
   border: 1px solid $white;
-  text-decoration: none;
+  border-radius: 5px;
   color: $white;
+  text-decoration: none;
   font-size: 12.8px;
   cursor: pointer;
 }
@@ -124,49 +126,48 @@ img {
   @extend %small-font;
 
   img {
-    height: 24px;
     width: 24px;
+    height: 24px;
     padding-right: 15px;
   }
 }
 
-  .upper-text {
-    text-transform: uppercase;
-  }
+.upper-text {
+  text-transform: uppercase;
+}
 
-  .capitalize {
-    text-transform: capitalize;
-  }
+.capitalize {
+  text-transform: capitalize;
+}
 
-  .t-bold {
-    font-weight: bold;
-  }
+.t-bold {
+  font-weight: bold;
+}
 
-  .color-d-grey {
-    color: $dark-grey;
-  }
+.color-d-grey {
+  color: $dark-grey;
+}
 
-  .color-grey {
-    color: $grey;
-  }
+.color-grey {
+  color: $grey;
+}
 
-  @include desktop-fonts;
+@include desktop-fonts;
 
 @media screen and (min-width: 1240px) {
   .container {
     width: 1240px;
-}
+  }
 }
 
 @media screen and (max-width: 676px) {
-
   .item {
     width: 100%;
   }
 
   .grid-m-2-columns {
-    width: 100%;
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(2, minmax(100px, calc(50% - 50px)));
   }
 

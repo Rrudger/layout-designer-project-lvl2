@@ -3,9 +3,10 @@
 }
 
 .news-author {
+  margin-bottom: 35px;
+
   @extend %flex-row;
   @extend %a-center;
-  margin-bottom: 35px;
 
   img {
     width: 19px;
@@ -15,8 +16,9 @@
 }
 
 .autor {
-  color: $orange;
   margin-right: 15px;
+  color: $orange;
+
   @extend %small-font;
 }
 
@@ -48,8 +50,8 @@
 
 .btn-news {
   color: $dark-grey;
-  border-color: $dark-grey;
   padding: 16px 30px 16px 30px;
+  border-color: $dark-grey;
 }
 
 .h2-news {
@@ -57,16 +59,15 @@
 }
 
 .h3-news {
-  font-size: 30px;
-  font-weight: normal;
   margin-top: 0;
+  font-weight: normal;
+  font-size: 30px;
 }
 
-@media screen and (max-width: 676px){
-
+@media screen and (max-width: 676px) {
   .mobile-news {
-    grid-template-columns: 1fr;
     grid-gap: 50px;
+    grid-template-columns: 1fr;
   }
 
   .h3-news {

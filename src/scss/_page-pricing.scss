@@ -12,25 +12,25 @@
 
 .page-pricing {
   text-align: center;
-
 }
 
 .items {
-  margin-bottom: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-bottom: 40px;
   grid-gap: 47px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .pricing-item {
   padding: 0 1.5rem;
-  border-radius: 1rem;
   background-position: center;
+  border-radius: 1rem;
   background-size: cover;
 }
 
 .pricing-value {
   margin-bottom: 40px;
+
   @extend %j-center;
   @extend %a-start;
 }
@@ -41,14 +41,15 @@
 }
 
 .value {
+  margin-left: 16px;
   font-size: 32px;
   line-height: 48px;
-  margin-left: 16px;
 }
 
 .pricing-footer {
   margin-top: 64px;
   margin-bottom: 64px;
+
   @extend %small-font;
 }
 
@@ -57,15 +58,15 @@
 }
 
 .h3-pricing {
-  font-size: 24px;
-  font-weight: normal;
   margin-bottom: 200px;
+  font-weight: normal;
+  font-size: 24px;
 }
 
 .btn-pricing {
-  font-size: 16px;
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
 }
 
 .section-pricing-footer {
@@ -74,9 +75,9 @@
 
 @media screen and (max-width: 676px) {
   .items {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 50px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .pricing-value {

@@ -3,25 +3,28 @@
 }
 
 .track-img {
-  height: 55px;
   width: 55px;
+  height: 55px;
   margin-right: 15px;
 }
 
 .track-info {
   flex-grow: 1;
+
   @extend %j-between;
   @extend %a-center;
 }
 
 .track-descr {
-  font-size: 12.8px;
   margin: 0;
+  font-size: 12.8px;
+
   @extend %small-font;
 }
 
 .track-time {
   color: $grey;
+
   @extend %small-font;
 }
 
@@ -29,9 +32,9 @@
   text-align: left;
 }
 
-  @media screen and (max-width: 676px) {
-    .popular-mobile-container {
-      display: flex;
-      flex-direction: column;
-    }
+@media screen and (max-width: 676px) {
+  .popular-mobile-container {
+    display: flex;
+    flex-direction: column;
   }
+}
